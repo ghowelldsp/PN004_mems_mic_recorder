@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug 13 22:00:47 2020
+# Process ID: 3992
+# Current directory: Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/memsMicRec_vivado/memsMicRec_vivado.runs/mmcm_clock_synth_1
+# Command line: vivado.exe -log mmcm_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmcm_clock.tcl
+# Log file: Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/memsMicRec_vivado/memsMicRec_vivado.runs/mmcm_clock_synth_1/mmcm_clock.vds
+# Journal file: Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/memsMicRec_vivado/memsMicRec_vivado.runs/mmcm_clock_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mmcm_clock.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mmcm_clock, cache-ID = e59d647a79f270f1.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 13 22:01:01 2020...

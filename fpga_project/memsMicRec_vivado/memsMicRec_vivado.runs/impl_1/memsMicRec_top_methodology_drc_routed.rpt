@@ -1,0 +1,533 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Oct 26 20:02:28 2020
+| Host         : DESKTOP-H4I3KC3 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file memsMicRec_top_methodology_drc_routed.rpt -pb memsMicRec_top_methodology_drc_routed.pb -rpx memsMicRec_top_methodology_drc_routed.rpx
+| Design       : memsMicRec_top
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 98
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks     | 2          |
+| TIMING-7  | Critical Warning | No common node between related clocks              | 2          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                       | 2          |
+| SYNTH-10  | Warning          | Wide multiplier                                    | 32         |
+| SYNTH-13  | Warning          | combinational multiplier                           | 5          |
+| TIMING-16 | Warning          | Large setup violation                              | 49         |
+| TIMING-18 | Warning          | Missing input or output delay                      | 4          |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock clocking_comp/mmcm_clocks/inst/SYSCLK is defined downstream of clock sys_clk_pin and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks CLK_OUT1_mmcm_clock and sys_clk_pin are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks CLK_OUT1_mmcm_clock] -to [get_clocks sys_clk_pin]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks sys_clk_pin and CLK_OUT1_mmcm_clock are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk_pin] -to [get_clocks CLK_OUT1_mmcm_clock]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks CLK_OUT1_mmcm_clock and sys_clk_pin are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks CLK_OUT1_mmcm_clock] -to [get_clocks sys_clk_pin]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks sys_clk_pin and CLK_OUT1_mmcm_clock are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk_pin] -to [get_clocks CLK_OUT1_mmcm_clock]
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clocking_comp/mmcm_clocks/inst/SYSCLK is created on an inappropriate internal pin clocking_comp/mmcm_clocks/inst/SYSCLK. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell clocking_comp/ring_count[1]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) hpFlt_comp/bq1_1/delayReg_reg[0][0]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][10]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][11]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][12]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][13]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][14]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][15]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][16]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][17]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][18]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][19]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][1]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][20]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][21]/CLR, hpFlt_comp/bq1_1/delayReg_reg[0][22]/CLR (the first 15 of 2521 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell spiSlave_comp/mmcm_clocks_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) clocking_comp/mmcm_clocks/inst/mmcm_adv_inst/RST, spiSlave_comp/fallBitCnt_reg[0]/CLR, spiSlave_comp/fallBitCnt_reg[1]/CLR, spiSlave_comp/fallBitCnt_reg[2]/CLR, spiSlave_comp/mosiData_reg[0]/CLR, spiSlave_comp/mosiData_reg[1]/CLR, spiSlave_comp/mosiData_reg[2]/CLR, spiSlave_comp/mosiData_reg[3]/CLR, spiSlave_comp/mosiData_reg[4]/CLR, spiSlave_comp/mosiData_reg[5]/CLR, spiSlave_comp/mosiData_reg[6]/CLR, spiSlave_comp/mosiData_reg[7]/CLR, spiSlave_comp/mosiShftReg_reg[0]/CLR, spiSlave_comp/mosiShftReg_reg[1]/CLR, spiSlave_comp/mosiShftReg_reg[2]/CLR (the first 15 of 27 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0.
+Related violations: <none>
+
+SYNTH-13#2 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0.
+Related violations: <none>
+
+SYNTH-13#3 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0.
+Related violations: <none>
+
+SYNTH-13#4 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0.
+Related violations: <none>
+
+SYNTH-13#5 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.002 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[3][76]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.006 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[1][89]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.007 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[3][79]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.018 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[2][70]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.023 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[4][78]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.028 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[3][75]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.030 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[4][75]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.042 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[1][88]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.053 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[19][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_2/bl.fifo_36_inst_bl.fifo_36_bl/DI[4] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.055 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[2][77]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.064 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[19][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_4/bl.fifo_36_inst_bl.fifo_36_bl/DI[6] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.064 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[1][93]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.083 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[2][78]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.087 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[22][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_4/bl.fifo_36_inst_bl.fifo_36_bl/DI[1] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.090 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[1][86]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.101 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[3][78]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.103 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[1][92]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.105 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[19][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_2/bl.fifo_36_inst_bl.fifo_36_bl/DI[3] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.118 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[4][76]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.128 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[3][77]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.132 ns between hpFlt_comp/bq1_2/multiInx_reg[2]/C (clocked by CLK_OUT1_mmcm_clock) and hpFlt_comp/bq1_2/multiVec_reg[1][90]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.145 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[22][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_1/bl.fifo_36_inst_bl.fifo_36_bl/DI[1] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.203 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[22][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_2/bl.fifo_36_inst_bl.fifo_36_bl/DI[1] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.209 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[19][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_2/bl.fifo_36_inst_bl.fifo_36_bl/DI[6] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.218 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[19][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_1/bl.fifo_36_inst_bl.fifo_36_bl/DI[5] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.452 ns between cicFirDemod_comp/firFlt23_comp/prodArray_reg[19][3]/C (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_2/bl.fifo_36_inst_bl.fifo_36_bl/DI[5] (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -4.401 ns between dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_3/bl.fifo_36_inst_bl.fifo_36_bl/WRCLK (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/fifoRdComp/FSM_sequential_rdState_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -4.406 ns between dataTransmit_comp/FIFO_DUALCLOCK_MACRO_inst_3/bl.fifo_36_inst_bl.fifo_36_bl/WRCLK (clocked by CLK_OUT1_mmcm_clock) and dataTransmit_comp/fifoRdComp/FSM_sequential_rdState_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -5.053 ns between dataTransmit_comp/fifoRstBuff_reg/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/FSM_sequential_wrEnState_reg/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -5.216 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrFifoSelCnt_reg[0]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -5.218 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrFifoSelCnt_reg[1]/D (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -5.345 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[0]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -5.345 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[1]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -5.345 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[2]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -5.345 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[3]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -5.350 ns between dataTransmit_comp/fifoRstBuff_reg/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrEnCnt_reg[0]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -5.350 ns between dataTransmit_comp/fifoRstBuff_reg/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrEnCnt_reg[1]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -5.350 ns between dataTransmit_comp/fifoRstBuff_reg/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrEnCnt_reg[2]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -5.350 ns between dataTransmit_comp/fifoRstBuff_reg/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrEnCnt_reg[4]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -5.351 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrEnCnt_reg[3]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -5.514 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[10]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -5.514 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[11]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -5.514 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[8]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -5.514 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[9]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -5.614 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[4]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -5.614 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[5]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -5.614 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[6]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -5.614 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[7]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -5.683 ns between dataTransmit_comp/fifoRstBuff_reg_replica/C (clocked by sys_clk_pin) and dataTransmit_comp/fifoWrComp/wrDinCnt_reg[12]/R (clocked by CLK_OUT1_mmcm_clock). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on CS_N relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on MOSI relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on SCLK relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on MISO relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+

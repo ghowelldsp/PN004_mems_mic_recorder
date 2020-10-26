@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../memsMicRec_vivado.srcs/sources_1/ip/mmcm_clock/mmcm_clock_sim_netlist.vhdl" \
+"../../../../../code/biquad.vhd" \
+"../../../../../code/cicFilter.vhd" \
+"../../../../../code/cicFirDemod.vhd" \
+"../../../../../code/cicFlt.vhd" \
+"../../../../../code/clocks.vhd" \
+"../../../../../code/dataTransmit.vhd" \
+"../../../../../code/fifoRead.vhd" \
+"../../../../../code/fifoWrite.vhd" \
+"../../../../../code/firFlt.vhd" \
+"../../../../../code/hpFlt.vhd" \
+"../../../../../code/memsMicRec_top.vhd" \
+"../../../../../code/pdmDecode.vhd" \
+"../../../../../code/pdmDemod.vhd" \
+"../../../../../code/spiSlave.vhd" \
+"../../../../../code/memsMicRec_tb.vhd" \
+
+# Do not sort compile order
+nosort

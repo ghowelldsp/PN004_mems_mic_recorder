@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 26 19:49:33 2020
+# Process ID: 4624
+# Current directory: Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/impl_1
+# Command line: vivado.exe -log memsMicRec_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source memsMicRec_top.tcl -notrace
+# Log file: Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/impl_1/memsMicRec_top.vdi
+# Journal file: Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source memsMicRec_top.tcl -notrace

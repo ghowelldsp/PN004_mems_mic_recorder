@@ -1,0 +1,1051 @@
+
+*** Running vivado
+    with args -log memsMicRec_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source memsMicRec_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source memsMicRec_top.tcl -notrace
+Command: synth_design -top memsMicRec_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7844 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 710.445 ; gain = 177.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'memsMicRec_top' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:60]
+	Parameter SYS_RST_VAL bound to: 10000000 - type: integer 
+	Parameter MMCM_RST_VAL bound to: 6144000 - type: integer 
+INFO: [Synth 8-3491] module 'clocks' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/clocks.vhd:38' bound to instance 'clocking_comp' of component 'clocks' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'clocks' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/clocks.vhd:67]
+	Parameter CLK_SPI_MAX_VAL bound to: 9 - type: integer 
+	Parameter CLK_SPI_HD_VAL bound to: 5 - type: integer 
+	Parameter CLK_PDM_MAX_VAL bound to: 19 - type: integer 
+	Parameter CLK_PDM_HD_VAL bound to: 10 - type: integer 
+	Parameter CLK_PCM_MAX_VAL bound to: 1279 - type: integer 
+	Parameter CLK_PCM_HD_VAL bound to: 640 - type: integer 
+INFO: [Synth 8-3491] module 'mmcm_clock' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/synth_1/.Xil/Vivado-4516-DESKTOP-H4I3KC3/realtime/mmcm_clock_stub.vhdl:5' bound to instance 'mmcm_clocks' of component 'mmcm_clock' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/clocks.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'mmcm_clock' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/synth_1/.Xil/Vivado-4516-DESKTOP-H4I3KC3/realtime/mmcm_clock_stub.vhdl:15]
+INFO: [Synth 8-256] done synthesizing module 'clocks' (1#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/clocks.vhd:67]
+INFO: [Synth 8-3491] module 'pdmDecode' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDecode.vhd:38' bound to instance 'pdmDecode_comp' of component 'pdmDecode' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'pdmDecode' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDecode.vhd:55]
+	Parameter PDM_BIT1_OFFSET_VAL bound to: 4 - type: integer 
+	Parameter PDM_BIT2_OFFSET_VAL bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pdmDecode' (2#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDecode.vhd:55]
+INFO: [Synth 8-3491] module 'pdmDemod' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDemod.vhd:38' bound to instance 'pdmDemod_comp' of component 'pdmDemod' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'pdmDemod' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDemod.vhd:51]
+INFO: [Synth 8-3491] module 'cicFilter' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFilter.vhd:38' bound to instance 'cicFilter1_comp' of component 'cicFilter' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDemod.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'cicFilter' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFilter.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'cicFilter' (3#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFilter.vhd:48]
+INFO: [Synth 8-3491] module 'cicFilter' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFilter.vhd:38' bound to instance 'cicFilter2_comp' of component 'cicFilter' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDemod.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'pdmDemod' (4#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/pdmDemod.vhd:51]
+INFO: [Synth 8-3491] module 'cicFirDemod' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:38' bound to instance 'cicFirDemod_comp' of component 'cicFirDemod' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'cicFirDemod' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:52]
+INFO: [Synth 8-3491] module 'cicFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFlt.vhd:38' bound to instance 'cicFlt11_comp' of component 'cicFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'cicFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFlt.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'cicFlt' (5#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFlt.vhd:47]
+INFO: [Synth 8-3491] module 'firFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:38' bound to instance 'firFlt11_comp' of component 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'firFlt' (6#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:47]
+INFO: [Synth 8-3491] module 'firFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:38' bound to instance 'firFlt12_comp' of component 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:124]
+INFO: [Synth 8-3491] module 'firFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:38' bound to instance 'firFlt13_comp' of component 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:132]
+INFO: [Synth 8-3491] module 'cicFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFlt.vhd:38' bound to instance 'cicFlt21_comp' of component 'cicFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:142]
+INFO: [Synth 8-3491] module 'firFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:38' bound to instance 'firFlt21_comp' of component 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:150]
+INFO: [Synth 8-3491] module 'firFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:38' bound to instance 'firFlt22_comp' of component 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:158]
+INFO: [Synth 8-3491] module 'firFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/firFlt.vhd:38' bound to instance 'firFlt23_comp' of component 'firFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'cicFirDemod' (7#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/cicFirDemod.vhd:52]
+INFO: [Synth 8-3491] module 'hpFlt' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:38' bound to instance 'hpFlt_comp' of component 'hpFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:322]
+INFO: [Synth 8-638] synthesizing module 'hpFlt' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:53]
+INFO: [Synth 8-3491] module 'biquad' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:38' bound to instance 'bq1_1' of component 'biquad' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'biquad' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'biquad' (8#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:52]
+INFO: [Synth 8-3491] module 'biquad' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:38' bound to instance 'bq1_2' of component 'biquad' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:114]
+INFO: [Synth 8-3491] module 'biquad' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:38' bound to instance 'bq1_3' of component 'biquad' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:129]
+INFO: [Synth 8-3491] module 'biquad' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:38' bound to instance 'bq1_4' of component 'biquad' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:144]
+INFO: [Synth 8-256] done synthesizing module 'hpFlt' (9#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/hpFlt.vhd:53]
+INFO: [Synth 8-3491] module 'spiSlave' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/spiSlave.vhd:29' bound to instance 'spiSlave_comp' of component 'spiSlave' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'spiSlave' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/spiSlave.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'spiSlave' (10#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/spiSlave.vhd:47]
+INFO: [Synth 8-3491] module 'dataTransmit' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:44' bound to instance 'dataTransmit_comp' of component 'dataTransmit' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:374]
+INFO: [Synth 8-638] synthesizing module 'dataTransmit' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:71]
+	Parameter BIT_DEPTH bound to: 8 - type: integer 
+	Parameter FIFO_BIT_DEPTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'fifoWrite' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoWrite.vhd:44' bound to instance 'fifoWrComp' of component 'fifoWrite' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'fifoWrite' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoWrite.vhd:74]
+	Parameter BYTE_PER_WR bound to: 16 - type: integer 
+	Parameter FIFO_SIZE bound to: 4096 - type: integer 
+	Parameter NUM_FIFOS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifoWrite' (11#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoWrite.vhd:74]
+INFO: [Synth 8-3491] module 'fifoRead' declared at 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoRead.vhd:44' bound to instance 'fifoRdComp' of component 'fifoRead' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'fifoRead' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoRead.vhd:72]
+	Parameter FIFO_SIZE bound to: 4096 - type: integer 
+	Parameter NUM_FIFOS bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoRead.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'fifoRead' (12#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/fifoRead.vhd:72]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'FIFO_DUALCLOCK_MACRO' declared at 'C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:36' bound to instance 'FIFO_DUALCLOCK_MACRO_inst_1' of component 'FIFO_DUALCLOCK_MACRO' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'unimacro_FIFO_DUALCLOCK_MACRO' [C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:70]
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter DO_REG bound to: 1 - type: integer 
+	Parameter EN_ECC_READ bound to: 0 - type: bool 
+	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
+	Parameter EN_SYN bound to: 0 - type: bool 
+	Parameter FIFO_MODE bound to: FIFO36 - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_RDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RDEN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter IS_WRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_WREN_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'fifo_36_bl' to cell 'FIFO36E1' [C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:843]
+INFO: [Synth 8-256] done synthesizing module 'unimacro_FIFO_DUALCLOCK_MACRO' (13#1) [C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:70]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'FIFO_DUALCLOCK_MACRO' declared at 'C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:36' bound to instance 'FIFO_DUALCLOCK_MACRO_inst_2' of component 'FIFO_DUALCLOCK_MACRO' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:300]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'FIFO_DUALCLOCK_MACRO' declared at 'C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:36' bound to instance 'FIFO_DUALCLOCK_MACRO_inst_3' of component 'FIFO_DUALCLOCK_MACRO' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:324]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'FIFO_DUALCLOCK_MACRO' declared at 'C:/Xilinx/Vivado/2019.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhd:36' bound to instance 'FIFO_DUALCLOCK_MACRO_inst_4' of component 'FIFO_DUALCLOCK_MACRO' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:349]
+INFO: [Synth 8-256] done synthesizing module 'dataTransmit' (14#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/dataTransmit.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'memsMicRec_top' (15#1) [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_top.vhd:60]
+WARNING: [Synth 8-3331] design fifoRead has unconnected port RST
+WARNING: [Synth 8-3331] design fifoWrite has unconnected port RST_MMCM
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 777.063 ; gain = 243.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 777.063 ; gain = 243.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 777.063 ; gain = 243.910
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.srcs/sources_1/ip/mmcm_clock/mmcm_clock/mmcm_clock_in_context.xdc] for cell 'clocking_comp/mmcm_clocks'
+Finished Parsing XDC File [z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.srcs/sources_1/ip/mmcm_clock/mmcm_clock/mmcm_clock_in_context.xdc] for cell 'clocking_comp/mmcm_clocks'
+Parsing XDC File [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/Basys3_Master.xdc]
+Finished Parsing XDC File [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/memsMicRec_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/memsMicRec_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 930.563 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 930.563 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 930.563 ; gain = 397.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 930.563 ; gain = 397.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK. (constraint file  z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.srcs/sources_1/ip/mmcm_clock/mmcm_clock/mmcm_clock_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK. (constraint file  z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.srcs/sources_1/ip/mmcm_clock/mmcm_clock/mmcm_clock_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clocking_comp/mmcm_clocks. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 930.563 ; gain = 397.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CIC_state_reg' in module 'cicFilter'
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 8 [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/biquad.vhd:192]
+INFO: [Synth 8-802] inferred FSM for state register 'wrEnState_reg' in module 'fifoWrite'
+INFO: [Synth 8-802] inferred FSM for state register 'rdState_reg' in module 'fifoRead'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          cic_idle_state |                              001 |                               00
+    cic_read_input_state |                              010 |                               01
+cic_integrator_delay_state |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CIC_state_reg' using encoding 'one-hot' in module 'cicFilter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wrEnState_reg' using encoding 'sequential' in module 'fifoWrite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rdState_reg' using encoding 'sequential' in module 'fifoRead'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 930.563 ; gain = 397.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |firFlt              |           6|      6708|
+|2     |cicFirDemod__GC0    |           1|      2060|
+|3     |memsMicRec_top__GC0 |           1|     19148|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     96 Bit       Adders := 4     
+	   3 Input     65 Bit       Adders := 8     
+	  24 Input     64 Bit       Adders := 6     
+	   2 Input     64 Bit       Adders := 8     
+	   2 Input     31 Bit       Adders := 6     
+	   3 Input     26 Bit       Adders := 2     
+	   4 Input     26 Bit       Adders := 2     
+	   5 Input     26 Bit       Adders := 2     
+	   6 Input     26 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 2     
+	   4 Input     14 Bit       Adders := 2     
+	   5 Input     14 Bit       Adders := 2     
+	   6 Input     14 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 12    
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 9     
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 6     
++---Registers : 
+	               96 Bit    Registers := 20    
+	               65 Bit    Registers := 8     
+	               64 Bit    Registers := 16    
+	               32 Bit    Registers := 144   
+	               26 Bit    Registers := 10    
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 230   
+	               14 Bit    Registers := 10    
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 4     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 20    
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 194   
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module memsMicRec_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+Module firFlt 
+Detailed RTL Component Info : 
++---Adders : 
+	  24 Input     64 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 24    
+	               16 Bit    Registers := 37    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+Module cicFlt__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   4 Input     14 Bit       Adders := 1     
+	   5 Input     14 Bit       Adders := 1     
+	   6 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module cicFlt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   4 Input     14 Bit       Adders := 1     
+	   5 Input     14 Bit       Adders := 1     
+	   6 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module clocks 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module pdmDecode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module cicFilter__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 1     
+	   4 Input     26 Bit       Adders := 1     
+	   5 Input     26 Bit       Adders := 1     
+	   6 Input     26 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cicFilter 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 1     
+	   4 Input     26 Bit       Adders := 1     
+	   5 Input     26 Bit       Adders := 1     
+	   6 Input     26 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module biquad__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     96 Bit       Adders := 1     
+	   3 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 5     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module biquad__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     96 Bit       Adders := 1     
+	   3 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 5     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module biquad__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     96 Bit       Adders := 1     
+	   3 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 5     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module biquad 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     96 Bit       Adders := 1     
+	   3 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 5     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module spiSlave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+Module fifoWrite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module fifoRead 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 3     
+Module dataTransmit 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP prodArray_reg[0]0, operation Mode is: A*B.
+DSP Report: operator prodArray_reg[0]0 is absorbed into DSP prodArray_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: Generating DSP multiVec_reg[0]0, operation Mode is: PCIN+A*B.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+DSP Report: operator multiVec_reg[0]0 is absorbed into DSP multiVec_reg[0]0.
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[0][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[1][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[1][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[2][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[3][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[4][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[5][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[6][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[7][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[8][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[9][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[0][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[1][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[10][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[11][0]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[11][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[2][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[2][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[1][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[0][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[2][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[4][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[3][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[3][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[5][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[3][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[3][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[4][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[7][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[5][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[4][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[6][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[5][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[6][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[8][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[10][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[7][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[9][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[5][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[11][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[9][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[7][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[8][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[12][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[13][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[9][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[6][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[10][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[9][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[12][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[14][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[16][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[11][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[15][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[7][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[17][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[15][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[11][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[12][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[18][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[19][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[13][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[8][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[14][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[21][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[13][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[21][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[18][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[21][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[20][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[21][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[22][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[15][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[21][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[9][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[23][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[16][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[21][1]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[16][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[15][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[16][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[17][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[18][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[16][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[18][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[18][0] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[10][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[19][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[20][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[18][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[20][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase0_reg[11][1]' (FDCE) to 'firFlt:/input_pipeline_phase0_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[21][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[22][0]'
+INFO: [Synth 8-3886] merging instance 'firFlt:/input_pipeline_phase1_reg[20][0]' (FDRE) to 'firFlt:/input_pipeline_phase1_reg[22][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase1_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (firFlt:/\input_pipeline_phase0_reg[0][1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 930.563 ; gain = 397.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------+---------------+----------------+
+|Module Name | RTL Object    | Depth x Width | Implemented As | 
++------------+---------------+---------------+----------------+
+|firFlt      | coeffArray[0] | 32x15         | LUT            | 
+|firFlt      | coeffArray[0] | 32x14         | LUT            | 
++------------+---------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|firFlt      | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|biquad      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |firFlt              |           2|      5029|
+|2     |cicFirDemod__GC0    |           1|      1658|
+|3     |memsMicRec_top__GC0 |           1|     12108|
+|4     |firFlt__1           |           4|      5149|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clocking_comp/mmcm_clocks/CLK_OUT1' to pin 'clocking_comp/mmcm_clocks/bbstub_CLK_OUT1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:49 . Memory (MB): peak = 935.766 ; gain = 402.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:03 . Memory (MB): peak = 1052.934 ; gain = 519.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |firFlt              |           2|      5029|
+|2     |cicFirDemod__GC0    |           1|      1658|
+|3     |memsMicRec_top__GC0 |           1|     11906|
+|4     |firFlt__1           |           4|      5149|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:20 ; elapsed = 00:02:36 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:26 ; elapsed = 00:02:44 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:26 ; elapsed = 00:02:44 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:31 ; elapsed = 00:02:50 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:31 ; elapsed = 00:02:50 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:32 ; elapsed = 00:02:51 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:32 ; elapsed = 00:02:51 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|memsMicRec_top | cicFirDemod_comp/firFlt11_comp/input_pipeline_phase0_reg[11][15] | 12     | 14    | YES          | NO                 | YES               | 14     | 0       | 
+|memsMicRec_top | cicFirDemod_comp/firFlt12_comp/input_pipeline_phase0_reg[11][15] | 12     | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|memsMicRec_top | cicFirDemod_comp/firFlt13_comp/input_pipeline_phase0_reg[11][15] | 12     | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|memsMicRec_top | cicFirDemod_comp/firFlt21_comp/input_pipeline_phase0_reg[11][15] | 12     | 14    | YES          | NO                 | YES               | 14     | 0       | 
+|memsMicRec_top | cicFirDemod_comp/firFlt22_comp/input_pipeline_phase0_reg[11][15] | 12     | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|memsMicRec_top | cicFirDemod_comp/firFlt23_comp/input_pipeline_phase0_reg[11][15] | 12     | 16    | YES          | NO                 | YES               | 16     | 0       | 
++---------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mmcm_clock    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |mmcm_clock_bbox_0 |     1|
+|2     |CARRY4            |  1097|
+|3     |DSP48E1           |    38|
+|4     |FIFO36E1          |     4|
+|5     |LUT1              |   193|
+|6     |LUT2              |  1588|
+|7     |LUT3              |  2520|
+|8     |LUT4              |  2303|
+|9     |LUT5              |   579|
+|10    |LUT6              |  1656|
+|11    |MUXF7             |   292|
+|12    |MUXF8             |     8|
+|13    |SRL16E            |    92|
+|14    |FDCE              |  2525|
+|15    |FDPE              |    22|
+|16    |FDRE              |  7976|
+|17    |IBUF              |     4|
+|18    |OBUF              |     2|
++------+------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------+--------------------------------+------+
+|      |Instance                        |Module                          |Cells |
++------+--------------------------------+--------------------------------+------+
+|1     |top                             |                                | 20901|
+|2     |  cicFirDemod_comp              |cicFirDemod                     | 14132|
+|3     |    cicFlt11_comp               |cicFlt                          |   419|
+|4     |    cicFlt21_comp               |cicFlt_7                        |   419|
+|5     |    firFlt11_comp               |firFlt                          |  2162|
+|6     |    firFlt12_comp               |firFlt_8                        |  2240|
+|7     |    firFlt13_comp               |firFlt_9                        |  2244|
+|8     |    firFlt21_comp               |firFlt_10                       |  2162|
+|9     |    firFlt22_comp               |firFlt_11                       |  2240|
+|10    |    firFlt23_comp               |firFlt_12                       |  2246|
+|11    |  clocking_comp                 |clocks                          |   161|
+|12    |  dataTransmit_comp             |dataTransmit                    |   206|
+|13    |    FIFO_DUALCLOCK_MACRO_inst_1 |unimacro_FIFO_DUALCLOCK_MACRO   |     1|
+|14    |    FIFO_DUALCLOCK_MACRO_inst_2 |unimacro_FIFO_DUALCLOCK_MACRO_4 |     1|
+|15    |    FIFO_DUALCLOCK_MACRO_inst_3 |unimacro_FIFO_DUALCLOCK_MACRO_5 |     1|
+|16    |    FIFO_DUALCLOCK_MACRO_inst_4 |unimacro_FIFO_DUALCLOCK_MACRO_6 |     1|
+|17    |    fifoRdComp                  |fifoRead                        |    62|
+|18    |    fifoWrComp                  |fifoWrite                       |   130|
+|19    |  hpFlt_comp                    |hpFlt                           |  4560|
+|20    |    bq1_1                       |biquad                          |  1150|
+|21    |    bq1_2                       |biquad_1                        |  1134|
+|22    |    bq1_3                       |biquad_2                        |  1142|
+|23    |    bq1_4                       |biquad_3                        |  1134|
+|24    |  pdmDecode_comp                |pdmDecode                       |    73|
+|25    |  pdmDemod_comp                 |pdmDemod                        |  1588|
+|26    |    cicFilter1_comp             |cicFilter                       |   802|
+|27    |    cicFilter2_comp             |cicFilter_0                     |   786|
+|28    |  spiSlave_comp                 |spiSlave                        |    42|
++------+--------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:32 ; elapsed = 00:02:51 . Memory (MB): peak = 1055.363 ; gain = 522.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:13 ; elapsed = 00:02:40 . Memory (MB): peak = 1055.363 ; gain = 368.711
+Synthesis Optimization Complete : Time (s): cpu = 00:02:32 ; elapsed = 00:02:52 . Memory (MB): peak = 1055.363 ; gain = 522.211
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1439 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1065.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:52 ; elapsed = 00:03:16 . Memory (MB): peak = 1065.395 ; gain = 774.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1065.395 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/synth_1/memsMicRec_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1065.395 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file memsMicRec_top_utilization_synth.rpt -pb memsMicRec_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 26 19:33:58 2020...

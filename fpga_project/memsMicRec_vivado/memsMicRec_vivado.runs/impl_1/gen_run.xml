@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1603741760">
+  <File Type="BITSTR-BMM" Name="memsMicRec_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="memsMicRec_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="memsMicRec_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="memsMicRec_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="memsMicRec_top.tcl"/>
+  <File Type="OPT-TIMING" Name="memsMicRec_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="memsMicRec_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="memsMicRec_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="memsMicRec_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="memsMicRec_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="memsMicRec_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="memsMicRec_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="memsMicRec_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="memsMicRec_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="memsMicRec_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="memsMicRec_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="memsMicRec_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="memsMicRec_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="memsMicRec_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="memsMicRec_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="memsMicRec_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="memsMicRec_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="memsMicRec_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="memsMicRec_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="memsMicRec_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="memsMicRec_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="memsMicRec_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="memsMicRec_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="memsMicRec_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="memsMicRec_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="memsMicRec_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="memsMicRec_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="memsMicRec_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="memsMicRec_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="memsMicRec_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="memsMicRec_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="memsMicRec_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="memsMicRec_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="memsMicRec_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="memsMicRec_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="memsMicRec_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="memsMicRec_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="memsMicRec_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="memsMicRec_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="memsMicRec_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="memsMicRec_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="memsMicRec_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="memsMicRec_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="memsMicRec_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="memsMicRec_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="memsMicRec_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="memsMicRec_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="memsMicRec_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="memsMicRec_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="memsMicRec_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="memsMicRec_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="memsMicRec_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="memsMicRec_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="memsMicRec_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="memsMicRec_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="memsMicRec_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="memsMicRec_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="memsMicRec_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="memsMicRec_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="memsMicRec_top.nky"/>
+  <File Type="BG-DRC" Name="memsMicRec_top.drc"/>
+  <File Type="RDI-RDI" Name="memsMicRec_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../code/biquad.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/cicFilter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/cicFirDemod.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/cicFlt.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/clocks.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/dataTransmit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/fifoRead.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/fifoWrite.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/firFlt.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/hpFlt.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/pdmDecode.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/pdmDemod.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/spiSlave.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/memsMicRec_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/dataTrans.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/i2sComp.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/i2sSlave.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="memsMicRec_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../code/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../code/Basys3_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mmcm_clock"/>
+</GenRun>

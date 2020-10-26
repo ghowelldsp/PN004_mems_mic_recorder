@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../memsMicRec_vivado.srcs/sources_1/ip/mmcm_clock/mmcm_clock_sim_netlist.vhdl" \
+
+nosort

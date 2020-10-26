@@ -1,0 +1,47 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto ba091f77ad7f4ba59c4bc7cbedcd0f70 --incr --debug all --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memsMicRec_tb_behav xil_defaultlib.memsMicRec_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'sclkhalfperiod' [Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/code/memsMicRec_tb.vhd:98]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_textio
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package unimacro.vcomponents
+Compiling module xil_defaultlib.glbl
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=48.0...]
+Compiling architecture structure of entity xil_defaultlib.mmcm_clock_mmcm_clock_clk_wiz [mmcm_clock_mmcm_clock_clk_wiz_de...]
+Compiling architecture structure of entity xil_defaultlib.mmcm_clock [mmcm_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.clocks [clocks_default]
+Compiling architecture behavioral of entity xil_defaultlib.pdmDecode [pdmdecode_default]
+Compiling architecture behavioral of entity xil_defaultlib.cicFilter [cicfilter_default]
+Compiling architecture behavioral of entity xil_defaultlib.pdmDemod [pdmdemod_default]
+Compiling architecture behavioral of entity xil_defaultlib.cicFlt [cicflt_default]
+Compiling architecture behavioral of entity xil_defaultlib.firFlt [firflt_default]
+Compiling architecture behavioral of entity xil_defaultlib.cicFirDemod [cicfirdemod_default]
+Compiling architecture behavioral of entity xil_defaultlib.biquad [biquad_default]
+Compiling architecture behavioral of entity xil_defaultlib.hpFlt [hpflt_default]
+Compiling architecture behavioral of entity xil_defaultlib.spiSlave [spislave_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifoWrite [fifowrite_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifoRead [fiforead_default]
+Compiling architecture ff36_internal_vhdl_v of entity unisim.FF36_INTERNAL_VHDL [\FF36_INTERNAL_VHDL(data_width=9...]
+Compiling architecture fifo36e1_v of entity unisim.FIFO36E1 [\FIFO36E1(data_width=9)(0,15)(0,...]
+Compiling architecture fifo_v of entity unimacro.FIFO_DUALCLOCK_MACRO [\FIFO_DUALCLOCK_MACRO(data_width...]
+Compiling architecture behavioral of entity xil_defaultlib.dataTransmit [datatransmit_default]
+Compiling architecture behavioral of entity xil_defaultlib.memsMicRec_top [\memsMicRec_top(sys_rst_val=20,m...]
+Compiling architecture behavioral of entity xil_defaultlib.memsmicrec_tb
+Built simulation snapshot memsMicRec_tb_behav
