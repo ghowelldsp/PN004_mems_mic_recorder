@@ -45,8 +45,7 @@ entity fifoRead is
     generic   ( FIFO_SIZE           : integer   := 4096;    -- total no. of bytes per fifo
                 NUM_FIFOS           : integer   := 4
                 );
-    port      ( RST                 : in    std_logic;  -- active high synchronous reset 
-                CLK                 : in    std_logic;  -- system clock
+    port      ( CLK                 : in    std_logic;  -- system clock
                 -- SPI
                 SPI_DIN             : out   std_logic_vector(7 downto 0);   -- input data for SPI master
                 CS_START_FLG        : in    std_logic;    -- signals that the cs line has gone low

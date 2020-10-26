@@ -47,7 +47,6 @@ entity fifoWrite is
                 NUM_FIFOS           : integer   := 4
                 );
     port      ( CLK_MMCM            : in    std_logic;  -- mmcm clock
-                RST_MMCM            : in    std_logic;  -- active high synchronous mmcm reset
                 -- PCM
                 CLK_PCM_CE          : in    std_logic;      -- pcm clock
                 PCM_MIC1_DATA       : in    std_logic_vector (15 downto 0); -- pcm mic 1 data

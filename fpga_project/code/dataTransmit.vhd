@@ -48,7 +48,6 @@ entity dataTransmit is
     port      ( RST                 : in    std_logic;  -- active high synchronous reset 
                 CLK                 : in    std_logic;  -- system clock
                 CLK_MMCM            : in    std_logic;  -- mmcm clock
-                RST_MMCM            : in    std_logic;  -- active high synchronous mmcm reset
                 -- SPI
                 SPI_DIN             : out   std_logic_vector(7 downto 0);   -- input data for SPI master
                 SPI_DOUT            : in    std_logic_vector(7 downto 0);   -- output data from SPI master
@@ -76,7 +75,6 @@ architecture Behavioral of dataTransmit is
 
 component fifoWrite
     port      ( CLK_MMCM            : in    std_logic;  -- mmcm clock
-                RST_MMCM            : in    std_logic;  -- active high synchronous mmcm reset
                 -- PCM
                 CLK_PCM_CE          : in    std_logic;      -- pcm clock
                 PCM_MIC1_DATA       : in    std_logic_vector (15 downto 0); -- pcm mic 1 data
@@ -101,8 +99,7 @@ component fifoWrite
 end component;
 
 component fifoRead
-    port      ( RST                 : in    std_logic;  -- active high synchronous reset 
-                CLK                 : in    std_logic;  -- system clock
+    port      ( CLK                 : in    std_logic;  -- system clock
                 -- SPI
                 SPI_DIN             : out   std_logic_vector(7 downto 0);   -- input data for SPI master
                 CS_START_FLG        : in    std_logic;    -- signals that the cs line has gone low
@@ -205,7 +202,6 @@ begin
     
     fifoWrComp: fifoWrite
         port map  ( CLK_MMCM            => CLK_MMCM,
-                    RST_MMCM            => RST_MMCM,
                     -- PCM
                     CLK_PCM_CE          => CLK_PCM_CE,
                     PCM_MIC1_DATA       => PCM_MIC1_DATA, 
@@ -229,8 +225,7 @@ begin
                     );
     
     fifoRdComp: fifoRead
-        port map  ( RST                 => RST,
-                    CLK                 => CLK,
+        port map  ( CLK                 => CLK,
                     -- SPI
                     SPI_DIN             => SPI_DIN,
                     CS_START_FLG        => CS_START_FLG,

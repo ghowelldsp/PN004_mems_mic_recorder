@@ -185,7 +185,6 @@ component dataTransmit
     port      ( RST                 : in    std_logic;  -- active high synchronous reset 
                 CLK                 : in    std_logic;  -- system clock
                 CLK_MMCM            : in    std_logic;  -- mmcm clock
-                RST_MMCM            : in    std_logic;  -- active high synchronous mmcm reset
                 -- SPI
                 SPI_DIN             : out   std_logic_vector(7 downto 0);   -- input data for SPI master
                 SPI_DOUT            : in    std_logic_vector(7 downto 0);   -- output data from SPI master
@@ -375,7 +374,6 @@ begin
         port map  ( RST                 => rstSys,
                     CLK                 => CLK,
                     CLK_MMCM            => clkMmcm,
-                    RST_MMCM            => rstMmcm,
                     -- SPI
                     SPI_DOUT            => spiDout,
                     SPI_DIN             => spiDin,
