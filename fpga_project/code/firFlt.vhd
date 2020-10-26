@@ -194,6 +194,7 @@ signal add_cast_46                      : signed(63 downto 0); -- sfix64_En29
 signal add_cast_47                      : signed(63 downto 0); -- sfix64_En29
 signal add_temp_23                      : signed(64 downto 0); -- sfix65_En29
 signal output_typeconvert               : signed(15 downto 0); -- sfix16_En14
+signal regoutTmp                        : signed(15 downto 0); -- sfix16_En14
 signal regout                           : signed(15 downto 0); -- sfix16_En14
 signal muxout                           : signed(15 downto 0); -- sfix16_En14
 
@@ -438,18 +439,30 @@ begin
     
     output_typeconvert <= sum24(30 downto 15);
     
+    -- clocks data outputs to reduced timing errors from the above logic
+    process (CLK)
+    begin
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                regoutTmp <= (others => '0');
+            else
+                regoutTmp <= output_typeconvert;
+            end if;
+        end if;
+    end process;
+    
     DataHoldRegister_process : process (CLK, RST)
     begin
         if (RST = '1') then
             regout <= (others => '0');
         elsif (rising_edge(CLK)) then
             if (phase_0 = '1') then
-                regout <= output_typeconvert;
+                regout <= regoutTmp;
             end if;
         end if; 
     end process DataHoldRegister_process;
     
-    muxout <= output_typeconvert when ( phase_0 = '1' ) else regout;
+    muxout <= regoutTmp when ( phase_0 = '1' ) else regout;
     
     -- Assignment Statements
     DOUT <= std_logic_vector(muxout);
