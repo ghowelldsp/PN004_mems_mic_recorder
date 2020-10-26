@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.xpr">
+<Project Version="7" Minor="40" Path="Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/memsMicRec_vivado/memsMicRec_vivado.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ba091f77ad7f4ba59c4bc7cbedcd0f70"/>
@@ -141,13 +141,6 @@
       </File>
       <File Path="$PPRDIR/../code/memsMicRec_top.vhd">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../code/dataTrans.vhd">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
