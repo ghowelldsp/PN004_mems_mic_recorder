@@ -11,7 +11,7 @@ filenames = {'cic_m1'; 'cic_m2'; 'cicFir_m1'; 'cicFir_m2'; 'cicHp_m1'; ...
 
 % variables
 fs = 48000; % sample rate
-gain = 50;  % 250
+gain = 1;  % 250
 
 for ni=1:length(filenames)
     
