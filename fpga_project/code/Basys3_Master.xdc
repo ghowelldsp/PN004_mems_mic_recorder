@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                                                      ## This file is a general .xdc for the Basys3 rev B board
+## This file is a general .xdc for the Basys3 rev B board
 ## To use it in a project:
 ## - uncomment the lines corresponding to used pins
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
@@ -132,17 +132,17 @@ create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_
 
 #Pmod Header JA
 #Sch name = JA1
-set_property PACKAGE_PIN J1 [get_ports {SCLK}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {SCLK}]
+set_property PACKAGE_PIN J1 [get_ports SCLK]
+set_property IOSTANDARD LVCMOS33 [get_ports SCLK]
 #Sch name = JA2
-set_property PACKAGE_PIN L2 [get_ports {CS_N}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {CS_N}]
+set_property PACKAGE_PIN L2 [get_ports CS_N]
+set_property IOSTANDARD LVCMOS33 [get_ports CS_N]
 #Sch name = JA3
-set_property PACKAGE_PIN J2 [get_ports {MOSI}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {MOSI}]
+set_property PACKAGE_PIN J2 [get_ports MOSI]
+set_property IOSTANDARD LVCMOS33 [get_ports MOSI]
 #Sch name = JA4
-set_property PACKAGE_PIN G2 [get_ports {MISO}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {MISO}]
+set_property PACKAGE_PIN G2 [get_ports MISO]
+set_property IOSTANDARD LVCMOS33 [get_ports MISO]
 #Sch name = JA7
 #set_property PACKAGE_PIN H1 [get_ports {CLK_PDM_HD}]
 #	set_property IOSTANDARD LVCMOS33 [get_ports {CLK_PDM_HD}]
@@ -214,11 +214,11 @@ set_property PACKAGE_PIN G2 [get_ports {MISO}]
 
 #Pmod Header JXADC
 #Sch name = XA1_P
-set_property PACKAGE_PIN J3 [get_ports {CLK_PDM_HD}]
-set_property IOSTANDARD LVCMOS33 [get_ports {CLK_PDM_HD}]
+set_property PACKAGE_PIN J3 [get_ports CLK_PDM_HD]
+set_property IOSTANDARD LVCMOS33 [get_ports CLK_PDM_HD]
 #Sch name = XA2_P
-set_property PACKAGE_PIN L3 [get_ports {PDM_DATA_IN}]
-set_property IOSTANDARD LVCMOS33 [get_ports {PDM_DATA_IN}]
+set_property PACKAGE_PIN L3 [get_ports PDM_DATA_IN]
+set_property IOSTANDARD LVCMOS33 [get_ports PDM_DATA_IN]
 #Sch name = XA3_P
 #set_property PACKAGE_PIN M2 [get_ports {FIFO_FULL_1}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {FIFO_FULL_1}]
@@ -300,3 +300,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {PDM_DATA_IN}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[3]}]
 #set_property PACKAGE_PIN K19 [get_ports QspiCSn]
 #set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
+
+set_false_path -from [get_clocks sys_clk_pin] -to [get_clocks -of_objects [get_pins clocking_comp/mmcm_clocks/inst/mmcm_adv_inst/CLKOUT0]]
+
+set_false_path -from [get_clocks -of_objects [get_pins clocking_comp/mmcm_clocks/inst/mmcm_adv_inst/CLKOUT0]] -to [get_clocks sys_clk_pin]

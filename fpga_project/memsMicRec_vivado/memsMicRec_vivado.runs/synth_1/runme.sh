@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project_copy/memsMicRec_vivado/memsMicRec_vivado.runs/synth_1'
+HD_PWD='Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/memsMicRec_vivado/memsMicRec_vivado.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

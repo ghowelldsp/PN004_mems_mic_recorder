@@ -1,7 +1,0 @@
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|              sys_clk_pin |      CLK_OUT1_mmcm_clock |                                               dataTransmit_comp/fifoWrComp/FSM_sequential_wrEnState_reg/D|
-|      CLK_OUT1_mmcm_clock |              sys_clk_pin |                                              dataTransmit_comp/fifoRdComp/FSM_sequential_rdState_reg[0]/D|
-|      CLK_OUT1_mmcm_clock |              sys_clk_pin |                                              dataTransmit_comp/fifoRdComp/FSM_sequential_rdState_reg[1]/D|
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

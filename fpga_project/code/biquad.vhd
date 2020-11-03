@@ -110,12 +110,12 @@ begin
     --------------------------------- DELAY REG --------------------------------------
     -- delay register holding the delayed values of first section s1[n-1] and s1[n-2]
     
-    delay_reg_process : process (CLK, RST)
+    delay_reg_process : process (CLK)
     begin
-        if (RST = '1') then
-            delayReg <= (others => to_signed(0, 64));
-        elsif (rising_edge(CLK)) then
-            if (CLK_CE = '1') then
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                delayReg <= (others => to_signed(0, 64));
+            elsif (CLK_CE = '1') then
                 delayReg(0) <= sub2;
                 delayReg(1) <= delayReg(0);
             end if;
@@ -125,12 +125,12 @@ begin
     ---------------------------------- INPUT ------------------------------------------
     -- read input data
     
-    input_data_process : process (CLK, RST)
-    begin
-        if (RST = '1') then
-            dinSigned <= to_signed(0,16);
-        elsif (rising_edge(CLK)) then
-            if (CLK_CE = '1') then
+    input_data_process : process (CLK)
+    begin 
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                dinSigned <= to_signed(0,16);
+            elsif (CLK_CE = '1') then
                 dinSigned <= signed(DIN);
             end if;
         end if;
@@ -154,29 +154,31 @@ begin
     delayVec(3) <= delayReg(1);
     delayVec(4) <= sub2;
     
---    multi_phase_ce_process : process (CLK, RST)
---    begin
---        if (RST = '1') then
---            multiPhaseCeCnt <= to_unsigned(1,2);
---        elsif (rising_edge(CLK)) then
---            multiPhaseCeCnt <= multiPhaseCeCnt + to_unsigned(1,2);
---        end if;
---    end process multi_phase_ce_process;
-    
---    multiPhaseCe <= '1' when (multiPhaseCeCnt = to_unsigned(0,2)) else '0';
-    
-    multi_index_process : process (CLK, RST)
+    multi_phase_ce_process : process (CLK)
     begin
-        if (RST = '1') then 
-            multiInx <= 0;
-        elsif (rising_edge(CLK)) then
---            if (multiPhaseCe = '1') then
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                multiPhaseCeCnt <= to_unsigned(1,2);
+            else
+                multiPhaseCeCnt <= multiPhaseCeCnt + to_unsigned(1,2);
+            end if;
+        end if;
+    end process multi_phase_ce_process;
+    
+    multiPhaseCe <= '1' when (multiPhaseCeCnt = to_unsigned(0,2)) else '0';
+    
+    multi_index_process : process (CLK)
+    begin
+        if (rising_edge(CLK)) then
+            if (RST = '1') then 
+                multiInx <= 0;
+            elsif (multiPhaseCe = '1') then
                 if (multiInx >= 4) then
                     multiInx <= 0;
                 else
                     multiInx <= multiInx + 1;
                 end if;
---            end if;
+            end if;
         end if;
     end process multi_index_process;
     
@@ -188,9 +190,9 @@ begin
             if (RST = '1') then
                 multiVec <= (others => (others => '0'));
             else
---            if (multiPhaseCe = '1') then
-                multiVec(multiInx) <= delayVec(multiInx) *  coeffVec(multiInx);
---            end if;
+                if (multiPhaseCe = '1') then
+                    multiVec(multiInx) <= delayVec(multiInx) *  coeffVec(multiInx);
+                end if;
             end if;
         end if;
     end process multiply_process;
@@ -211,20 +213,22 @@ begin
     sub1Cast <= resize(sub1, 65);
     sub2 <= sub2Tmp(63 downto 0);
     
-    sub_process : process (CLK, RST)
+    sub_process : process (CLK)
     begin
-        if (RST = '1') then
-            sub1Tmp <= (others => '0');
-            sub2Tmp <= (others => '0');
-            sum1 <= (others => '0');
-            sum2 <= (others => '0');
-        elsif (rising_edge(CLK)) then
-            -- s1[n] = x[n] - a1.s1[n-1] - a2.s1[n-2]
-            sub1Tmp <= dinCast - a1mul1Cast;
-            sub2Tmp <= sub1Cast - a2mul1Cast;
-            -- y[n] = b0.s1[n] + b1.s1[n-1] + b2.s1[n-2]
-            sum1 <= b0mul1 + b1mul1; 
-            sum2 <= sum1 + b2mul1;
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                sub1Tmp <= (others => '0');
+                sub2Tmp <= (others => '0');
+                sum1 <= (others => '0');
+                sum2 <= (others => '0');
+            else
+                -- s1[n] = x[n] - a1.s1[n-1] - a2.s1[n-2]
+                sub1Tmp <= dinCast - a1mul1Cast;
+                sub2Tmp <= sub1Cast - a2mul1Cast;
+                -- y[n] = b0.s1[n] + b1.s1[n-1] + b2.s1[n-2]
+                sum1 <= b0mul1 + b1mul1; 
+                sum2 <= sum1 + b2mul1;
+            end if;
         end if;
     end process sub_process;
     
@@ -233,12 +237,12 @@ begin
     output_typeconvert <= sum2(49 downto 34);
     outputStd <= std_logic_vector(output_typeconvert);
     
-    output_buff_process : process (CLK, RST)
+    output_buff_process : process (CLK)
     begin
-        if (RST = '1') then
-            doutTmp <= (others => '0');
-        elsif (rising_edge(CLK)) then
-            if (CLK_CE = '1') then
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                doutTmp <= (others => '0');
+            elsif (CLK_CE = '1') then
                 doutTmp <= outputStd;
             end if;
         end if;

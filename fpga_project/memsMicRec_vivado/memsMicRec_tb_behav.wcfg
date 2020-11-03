@@ -13,19 +13,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="769731170fs"></ZoomStartTime>
-      <ZoomEndTime time="1046053767fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomStartTime time="308473333333fs"></ZoomStartTime>
+      <ZoomEndTime time="312675333334fs"></ZoomEndTime>
+      <Cursor1Time time="311975000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="242"></NameColumnWidth>
-      <ValueColumnWidth column_width="129"></ValueColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="15" />
    <wvobject fp_name="group39" type="group">
       <obj_property name="label">MAIN IO</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/memsMicRec_tb/TOP/CLK" type="logic">
          <obj_property name="ElementShortName">CLK</obj_property>
          <obj_property name="ObjectShortName">CLK</obj_property>
@@ -42,7 +41,6 @@
    <wvobject fp_name="group42" type="group">
       <obj_property name="label">RST</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/memsMicRec_tb/TOP/rstSys" type="logic">
          <obj_property name="ElementShortName">rstSys</obj_property>
          <obj_property name="ObjectShortName">rstSys</obj_property>
@@ -452,10 +450,6 @@
          <obj_property name="ElementShortName">CLK_MMCM</obj_property>
          <obj_property name="ObjectShortName">CLK_MMCM</obj_property>
       </wvobject>
-      <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/RST_MMCM" type="logic">
-         <obj_property name="ElementShortName">RST_MMCM</obj_property>
-         <obj_property name="ObjectShortName">RST_MMCM</obj_property>
-      </wvobject>
       <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/SPI_DIN" type="array">
          <obj_property name="ElementShortName">SPI_DIN[7:0]</obj_property>
          <obj_property name="ObjectShortName">SPI_DIN[7:0]</obj_property>
@@ -744,10 +738,6 @@
          <obj_property name="ElementShortName">CLK_MMCM</obj_property>
          <obj_property name="ObjectShortName">CLK_MMCM</obj_property>
       </wvobject>
-      <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/fifoWrComp/RST_MMCM" type="logic">
-         <obj_property name="ElementShortName">RST_MMCM</obj_property>
-         <obj_property name="ObjectShortName">RST_MMCM</obj_property>
-      </wvobject>
       <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/fifoWrComp/CLK_PCM_CE" type="logic">
          <obj_property name="ElementShortName">CLK_PCM_CE</obj_property>
          <obj_property name="ObjectShortName">CLK_PCM_CE</obj_property>
@@ -864,11 +854,6 @@
    <wvobject fp_name="group263" type="group">
       <obj_property name="label">FIFO_RD_TMP</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/fifoRdComp/RST" type="logic">
-         <obj_property name="ElementShortName">RST</obj_property>
-         <obj_property name="ObjectShortName">RST</obj_property>
-      </wvobject>
       <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/fifoRdComp/CLK" type="logic">
          <obj_property name="ElementShortName">CLK</obj_property>
          <obj_property name="ObjectShortName">CLK</obj_property>
@@ -996,6 +981,159 @@
       <wvobject fp_name="/memsMicRec_tb/TOP/dataTransmit_comp/fifoRdComp/NUM_FIFOS" type="other">
          <obj_property name="ElementShortName">NUM_FIFOS</obj_property>
          <obj_property name="ObjectShortName">NUM_FIFOS</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group241" type="group">
+      <obj_property name="label">BQ_TMP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/RST" type="logic">
+         <obj_property name="ElementShortName">RST</obj_property>
+         <obj_property name="ObjectShortName">RST</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/CLK" type="logic">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/CLK_CE" type="logic">
+         <obj_property name="ElementShortName">CLK_CE</obj_property>
+         <obj_property name="ObjectShortName">CLK_CE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/DIN" type="array">
+         <obj_property name="ElementShortName">DIN[15:0]</obj_property>
+         <obj_property name="ObjectShortName">DIN[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/DOUT" type="array">
+         <obj_property name="ElementShortName">DOUT[15:0]</obj_property>
+         <obj_property name="ObjectShortName">DOUT[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/B0" type="array">
+         <obj_property name="ElementShortName">B0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">B0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/B1" type="array">
+         <obj_property name="ElementShortName">B1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">B1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/B2" type="array">
+         <obj_property name="ElementShortName">B2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">B2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/A1" type="array">
+         <obj_property name="ElementShortName">A1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">A1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/A2" type="array">
+         <obj_property name="ElementShortName">A2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">A2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/delayReg" type="array">
+         <obj_property name="ElementShortName">delayReg[0:1][63:0]</obj_property>
+         <obj_property name="ObjectShortName">delayReg[0:1][63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/dinSigned" type="array">
+         <obj_property name="ElementShortName">dinSigned[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dinSigned[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/dinSignedConv" type="array">
+         <obj_property name="ElementShortName">dinSignedConv[63:0]</obj_property>
+         <obj_property name="ObjectShortName">dinSignedConv[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/coeffVec" type="array">
+         <obj_property name="ElementShortName">coeffVec[0:4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">coeffVec[0:4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/delayVec" type="array">
+         <obj_property name="ElementShortName">delayVec[0:4][63:0]</obj_property>
+         <obj_property name="ObjectShortName">delayVec[0:4][63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/multiPhaseCeCnt" type="array">
+         <obj_property name="ElementShortName">multiPhaseCeCnt[1:0]</obj_property>
+         <obj_property name="ObjectShortName">multiPhaseCeCnt[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/multiPhaseCe" type="logic">
+         <obj_property name="ElementShortName">multiPhaseCe</obj_property>
+         <obj_property name="ObjectShortName">multiPhaseCe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/multiVec" type="array">
+         <obj_property name="ElementShortName">multiVec[0:4][95:0]</obj_property>
+         <obj_property name="ObjectShortName">multiVec[0:4][95:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/multiInx" type="other">
+         <obj_property name="ElementShortName">multiInx</obj_property>
+         <obj_property name="ObjectShortName">multiInx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/a2mul1" type="array">
+         <obj_property name="ElementShortName">a2mul1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">a2mul1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/a1mul1" type="array">
+         <obj_property name="ElementShortName">a1mul1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">a1mul1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/b0mul1" type="array">
+         <obj_property name="ElementShortName">b0mul1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">b0mul1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/b1mul1" type="array">
+         <obj_property name="ElementShortName">b1mul1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">b1mul1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/b2mul1" type="array">
+         <obj_property name="ElementShortName">b2mul1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">b2mul1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/dinCast" type="array">
+         <obj_property name="ElementShortName">dinCast[64:0]</obj_property>
+         <obj_property name="ObjectShortName">dinCast[64:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/a1mul1Cast" type="array">
+         <obj_property name="ElementShortName">a1mul1Cast[64:0]</obj_property>
+         <obj_property name="ObjectShortName">a1mul1Cast[64:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/a2mul1Cast" type="array">
+         <obj_property name="ElementShortName">a2mul1Cast[64:0]</obj_property>
+         <obj_property name="ObjectShortName">a2mul1Cast[64:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sub1Tmp" type="array">
+         <obj_property name="ElementShortName">sub1Tmp[64:0]</obj_property>
+         <obj_property name="ObjectShortName">sub1Tmp[64:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sub1" type="array">
+         <obj_property name="ElementShortName">sub1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">sub1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sub1Cast" type="array">
+         <obj_property name="ElementShortName">sub1Cast[64:0]</obj_property>
+         <obj_property name="ObjectShortName">sub1Cast[64:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sub2Tmp" type="array">
+         <obj_property name="ElementShortName">sub2Tmp[64:0]</obj_property>
+         <obj_property name="ObjectShortName">sub2Tmp[64:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sub2" type="array">
+         <obj_property name="ElementShortName">sub2[63:0]</obj_property>
+         <obj_property name="ObjectShortName">sub2[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sum1" type="array">
+         <obj_property name="ElementShortName">sum1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">sum1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/sum2" type="array">
+         <obj_property name="ElementShortName">sum2[63:0]</obj_property>
+         <obj_property name="ObjectShortName">sum2[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/output_typeconvert" type="array">
+         <obj_property name="ElementShortName">output_typeconvert[15:0]</obj_property>
+         <obj_property name="ObjectShortName">output_typeconvert[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/outputStd" type="array">
+         <obj_property name="ElementShortName">outputStd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">outputStd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/memsMicRec_tb/TOP/hpFlt_comp/bq1_1/doutTmp" type="array">
+         <obj_property name="ElementShortName">doutTmp[15:0]</obj_property>
+         <obj_property name="ObjectShortName">doutTmp[15:0]</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

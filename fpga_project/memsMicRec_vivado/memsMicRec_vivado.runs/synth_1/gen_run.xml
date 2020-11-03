@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1603740608">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1604361637">
   <File Type="PA-TCL" Name="memsMicRec_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="memsMicRec_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="memsMicRec_top_reports.tcl"/>
@@ -91,13 +91,6 @@
     </File>
     <File Path="$PPRDIR/../code/memsMicRec_top.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../code/dataTrans.vhd">
-      <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

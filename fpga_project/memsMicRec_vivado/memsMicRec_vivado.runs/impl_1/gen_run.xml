@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1603741760">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1604361638">
   <File Type="BITSTR-BMM" Name="memsMicRec_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="memsMicRec_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="memsMicRec_top_timing_summary_init.rpt"/>
@@ -151,13 +151,6 @@
     </File>
     <File Path="$PPRDIR/../code/memsMicRec_top.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../code/dataTrans.vhd">
-      <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
