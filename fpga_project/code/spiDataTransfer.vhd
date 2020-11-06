@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 24.04.2020 13:21:50
 -- Design Name: 
--- Module Name: dataTrans - Behavioral
+-- Module Name: spiDataTransfer - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -41,7 +41,7 @@ use UNIMACRO.vcomponents.all;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity dataTransmit is
+entity spiDataTransfer is
     generic   ( BIT_DEPTH           : integer   := 8;       -- no. of bits data
                 FIFO_BIT_DEPTH      : integer   := 12       -- fifo bit depth, defined by the fifo state
                 );
@@ -65,9 +65,9 @@ entity dataTransmit is
                 PCM_MIC7_DATA       : in    std_logic_vector (15 downto 0); -- pcm mic 7 data
                 PCM_MIC8_DATA       : in    std_logic_vector (15 downto 0)  -- pcm mic 8 data
                 );             
-end dataTransmit;
+end spiDataTransfer;
 
-architecture Behavioral of dataTransmit is
+architecture Behavioral of spiDataTransfer is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------

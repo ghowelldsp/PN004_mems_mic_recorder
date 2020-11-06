@@ -4,7 +4,7 @@
 -- 
 -- Create Date:
 -- Design Name: 
--- Module Name: biquad - Behavioral
+-- Module Name: biquadFlt - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,7 +35,7 @@ use IEEE.NUMERIC_STD.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity biquad is
+entity biquadFlt is
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_CE              : in    std_logic;                      -- clock enable
@@ -47,9 +47,9 @@ entity biquad is
             A1                  : in    std_logic_vector (31 downto 0); -- a1 coefficient - sfix32_En30 
             A2                  : in    std_logic_vector (31 downto 0)  -- a2 coefficient - sfix32_En30 
             );
-end biquad;
+end biquadFlt;
 
-architecture Behavioral of biquad is
+architecture Behavioral of biquadFlt is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------

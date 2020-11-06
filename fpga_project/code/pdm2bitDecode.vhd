@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 22.04.2020 23:26:35
 -- Design Name: 
--- Module Name: pdmDecode - Behavioral
+-- Module Name: pdm2bitDecode - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity pdmDecode is
+entity pdm2bitDecode is
     generic   ( PDM_BIT1_OFFSET_VAL : integer       := 4;      -- this is the number of sys clk cycles before mic1 pdm data is captured
                 PDM_BIT2_OFFSET_VAL : integer       := 14      -- this is the number of sys clk cycles before mic1 pdm data is captured
                 );
@@ -50,9 +50,9 @@ entity pdmDecode is
                 PDM_BIT1_FLG        : out   std_logic;
                 PDM_BIT2_FLG        : out   std_logic
                 );
-end pdmDecode;
+end pdm2bitDecode;
 
-architecture Behavioral of pdmDecode is
+architecture Behavioral of pdm2bitDecode is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------

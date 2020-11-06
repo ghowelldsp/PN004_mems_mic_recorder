@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 23.04.2020 19:09:26
 -- Design Name: 
--- Module Name: pdmDemod - Behavioral
+-- Module Name: cicDemod - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity pdmDemod is
+entity cicDemod is
     port      ( RST                 : in    std_logic;                      -- system reset
                 CLK                 : in    std_logic;                      -- sys clock
                 CLK_PDM_CE          : in    std_logic;                      -- pdm clock
@@ -46,15 +46,15 @@ entity pdmDemod is
                 PDM_BIT1_FLG        : in    std_logic;                      -- signal that indicates bit 1 of the pdm signal has been read
                 PDM_BIT2_FLG        : in    std_logic                       -- signal that indicates bit 2 of the pdm signal has been read                       
                 );
-end pdmDemod;
+end cicDemod;
 
-architecture Behavioral of pdmDemod is
+architecture Behavioral of cicDemod is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------
 -----------------------------------------------------------------------------
 
-component cicFilter
+component cicFlt_4thOrd_64DecFact
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_PDM_CE          : in    std_logic;                      -- pdm clock
@@ -74,7 +74,7 @@ begin
     ------------------------ COMPONENT INSTANTIATIONS ---------------------------------
     -----------------------------------------------------------------------------------
     
-    cicFilter1_comp : cicFilter
+    cicFlt_4thOrd_64DecFact_1_comp : cicFlt_4thOrd_64DecFact
         port map  ( RST             => RST,     
                     CLK             => CLK,      
                     CLK_PDM_CE      => CLK_PDM_CE,
@@ -83,7 +83,7 @@ begin
                     PDM_BIT_FLG     => PDM_BIT1_FLG
                     );
                     
-    cicFilter2_comp : cicFilter
+    cicFlt_4thOrd_64DecFact_2_comp : cicFlt_4thOrd_64DecFact
         port map  ( RST             => RST,     
                     CLK             => CLK,      
                     CLK_PDM_CE      => CLK_PDM_CE,

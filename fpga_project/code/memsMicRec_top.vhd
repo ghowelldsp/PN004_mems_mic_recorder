@@ -83,7 +83,7 @@ component clocks
                 );           
 end component;
 
-component pdmDecode
+component pdm2bitDecode
     port      ( RST                 : in    std_logic;          -- system reset
                 CLK                 : in    std_logic;          -- system clk
                 CLK_PDM_CE          : in    std_logic;          -- pdm oversampling clk enable
@@ -97,7 +97,7 @@ component pdmDecode
                 );
 end component;
 
-component pdmDemod
+component cicDemod
     port      ( RST                 : in    std_logic;                      -- system reset
                 CLK                 : in    std_logic;                      -- sys clock
                 CLK_PDM_CE          : in    std_logic;                      -- pdm clock
@@ -124,7 +124,7 @@ component cicFirDemod
                 );
 end component;
 
-component hpFlt
+component dcFiltering
     port      ( RST                 : in    std_logic;                      -- system reset
                 CLK                 : in    std_logic;                      -- sys clock
                 CLK_CE              : in    std_logic;                      -- clock enable
@@ -140,7 +140,7 @@ component hpFlt
 end component;
 
 ---- i2s slave
---component i2sComp
+--component i2sTransfer
 --    port      ( CLK                 : in  std_logic; -- system clock
 --                RST                 : in  std_logic; -- high active synchronous reset
 --                -- I2S SIGNALS
@@ -181,7 +181,7 @@ component spiSlave
                 );
 end component;
 
-component dataTransmit
+component spiDataTransfer
     port      ( RST                 : in    std_logic;  -- active high synchronous reset 
                 CLK                 : in    std_logic;  -- system clock
                 CLK_MMCM            : in    std_logic;  -- mmcm clock
@@ -280,7 +280,7 @@ begin
                     CLK_SPI_CE          => clkSpiCE
                     );
                     
-    pdmDecode_comp : pdmDecode
+    pdm2bitDecode_comp : pdm2bitDecode
         port map  ( RST                 => rstMMCM,
                     CLK                 => clkMmcm,
                     CLK_PDM_CE          => clkPdmCE,
@@ -293,7 +293,7 @@ begin
                     PDM_BIT2_FLG        => pdmBit2Flg
                     );
                    
-    pdmDemod_comp : pdmDemod
+    cicDemod_comp : cicDemod
         port map  ( RST                 => rstMMCM,
                     CLK                 => clkMmcm,
                     CLK_PDM_CE          => clkPdmCE,
@@ -318,7 +318,7 @@ begin
                     PCM_MIC2_DOUT       => pcmMic2Data2          
                     );
                     
-    hpFlt_comp : hpFlt
+    dcFiltering_comp : dcFiltering
         port map  ( RST                 => rstMMCM,
                     CLK                 => clkMmcm,
                     CLK_CE              => clkPcmCE,
@@ -334,7 +334,7 @@ begin
                     
                     
      -- i2s slave
---    i2s_comp : i2sComp
+--    i2sTransfer_comp : i2sTransfer
 --        port map  ( RST                 => rstMMCM,
 --                    CLK                 => clkMmcm,
 --                    B_CLK               => B_CLK,
@@ -370,7 +370,7 @@ begin
                     LST_FALL_BIT        => spiLstFallFlg
                     );
                     
-    dataTransmit_comp : dataTransmit
+    spiDataTransfer_comp : spiDataTransfer
         port map  ( RST                 => rstSys,
                     CLK                 => CLK,
                     CLK_MMCM            => clkMmcm,

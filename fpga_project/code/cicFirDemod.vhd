@@ -55,7 +55,7 @@ architecture Behavioral of cicFirDemod is
 ---------------------- COMPONENT DECLERATIONS -------------------------------
 -----------------------------------------------------------------------------
 
-component cicFlt
+component cicFlt_4thOrd_8DecFact
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_CE              : in    std_logic;                      -- clock enable
@@ -64,7 +64,7 @@ component cicFlt
             );
 end component;
 
-component firFlt
+component firFlt_halfBandDec
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_CE              : in    std_logic;                      -- clock enable
@@ -105,7 +105,7 @@ begin
     
     -------------------------------- MIC 1 FILTERS ------------------------------------
     
-    cicFlt11_comp : cicFlt
+    cicFlt_4thOrd_8DecFact_1_comp : cicFlt_4thOrd_8DecFact
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_PDM_CE,
@@ -113,7 +113,7 @@ begin
                     DOUT            => cic11Dout
                     );
     
-    firFlt11_comp : firFlt
+    firFlt_halfBandDec_11_comp : firFlt_halfBandDec
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_FLT8_CE,
@@ -121,7 +121,7 @@ begin
                     DOUT            => fir11Dout
                     );
                     
-    firFlt12_comp : firFlt
+    firFlt_halfBandDec_12_comp : firFlt_halfBandDec
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_FLT16_CE,
@@ -129,7 +129,7 @@ begin
                     DOUT            => fir12Dout
                     );
    
-    firFlt13_comp : firFlt
+    firFlt_halfBandDec_13_comp : firFlt_halfBandDec
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_FLT32_CE,
@@ -139,7 +139,7 @@ begin
     
     -------------------------------- MIC 2 FILTERS ------------------------------------
                   
-    cicFlt21_comp : cicFlt
+    cicFlt_4thOrd_8DecFact_2_comp : cicFlt_4thOrd_8DecFact
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_PDM_CE,
@@ -147,7 +147,7 @@ begin
                     DOUT            => cic21Dout
                     );
                     
-    firFlt21_comp : firFlt
+    firFlt_halfBandDec_21_comp : firFlt_halfBandDec
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_FLT8_CE,
@@ -155,7 +155,7 @@ begin
                     DOUT            => fir21Dout
                     );
                     
-    firFlt22_comp : firFlt
+    firFlt_halfBandDec_22_comp : firFlt_halfBandDec
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_FLT16_CE,
@@ -163,7 +163,7 @@ begin
                     DOUT            => fir22Dout
                     );
    
-    firFlt23_comp : firFlt
+    firFlt_halfBandDec_23_comp : firFlt_halfBandDec
         port map  ( RST             => RST,
                     CLK             => CLK,
                     CLK_CE          => CLK_FLT32_CE,

@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 24.04.2020 12:46:40
 -- Design Name: 
--- Module Name: i2sComp - Behavioral
+-- Module Name: i2sTransfer - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -26,7 +26,7 @@ use IEEE.NUMERIC_STD.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity i2sComp is
+entity i2sTransfer is
     port      ( CLK                 : in  std_logic; -- system clock
                 RST                 : in  std_logic; -- high active synchronous reset
                 -- I2S SIGNALS
@@ -46,9 +46,9 @@ entity i2sComp is
                 DOUT3               : out std_logic; -- output data 3
                 DOUT4               : out std_logic  -- output data 4
                 );
-end i2sComp;
+end i2sTransfer;
 
-architecture Behavioral of i2sComp is
+architecture Behavioral of i2sTransfer is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------
@@ -127,9 +127,6 @@ begin
 -----------------------------------------------------------------------------------
 -------------------------------- MAIN PROCESSES -----------------------------------
 -----------------------------------------------------------------------------------
-
-
-    -------------------------------- BCLK LATCH -----------------------------------
 
     
 end Behavioral;

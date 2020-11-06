@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 09.08.2020 19:09:26
 -- Design Name: 
--- Module Name: cicFlt - Behavioral
+-- Module Name: firFlt_halfBandDec - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,16 +35,16 @@ use IEEE.NUMERIC_STD.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity firFlt is
+entity firFlt_halfBandDec is
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_CE              : in    std_logic;                      -- clock enable
             DIN                 : in    std_logic_vector (15 downto 0); -- input data
             DOUT                : out   std_logic_vector (15 downto 0)  -- output data
             );
-end firFlt;
+end firFlt_halfBandDec;
 
-architecture Behavioral of firFlt is
+architecture Behavioral of firFlt_halfBandDec is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------
@@ -84,7 +84,7 @@ constant coeffphase2_24                 : signed(15 downto 0) := to_signed(-3, 1
 TYPE data16_pipeline_type IS ARRAY (NATURAL range <>) OF signed(15 downto 0); -- sfix16_En14
 TYPE data32_pipeline_type IS ARRAY (NATURAL range <>) OF signed(31 downto 0); -- sfix16_En14
 signal coeffArray                       : data16_pipeline_type(0 TO 23);
-signal prodArray                        : data32_pipeline_type(0 TO 23);
+signal prodArray                        : data32_pipeline_type(0 TO 23) := (others => (others => '0'));
 signal ring_count                       : unsigned(1 downto 0); -- ufix2
 signal phase_0                          : std_logic; -- boolean
 signal phase_1                          : std_logic; -- boolean
@@ -93,6 +93,8 @@ signal input_pipeline_phase0            : data16_pipeline_type(0 TO 11); -- sfix
 signal input_pipeline_phase1            : data16_pipeline_type(0 TO 23); -- sfix16_En14
 signal product_phase0_13                : signed(31 downto 0); -- sfix32_En29
 signal prodCnt                          : integer range 0 to 23;
+signal multiPhaseCeCnt                  : unsigned(0 downto 0);
+signal multiPhaseCe                     : std_logic;
 
 signal quantized_sum                    : signed(63 downto 0); -- sfix64_En29
 signal sum1                             : signed(63 downto 0); -- sfix64_En29
@@ -192,6 +194,7 @@ signal add_cast_46                      : signed(63 downto 0); -- sfix64_En29
 signal add_cast_47                      : signed(63 downto 0); -- sfix64_En29
 signal add_temp_23                      : signed(64 downto 0); -- sfix65_En29
 signal output_typeconvert               : signed(15 downto 0); -- sfix16_En14
+signal regoutTmp                        : signed(15 downto 0); -- sfix16_En14
 signal regout                           : signed(15 downto 0); -- sfix16_En14
 signal muxout                           : signed(15 downto 0); -- sfix16_En14
 
@@ -233,7 +236,7 @@ begin
     coeffArray(23) <= coeffphase2_24;
     
     ----------------------------------- PHASE CE --------------------------------------
-      -- Block Statements
+
     ce_output : process (CLK, RST)
     begin
         if (RST = '1') then
@@ -277,15 +280,28 @@ begin
 
     product_phase0_13 <= resize(input_pipeline_phase0(11)(15 downto 0) & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0' & '0', 32);
     
+    multi_phase_ce_process : process (CLK, RST)
+    begin
+        if (RST = '1') then
+            multiPhaseCeCnt <= to_unsigned(1,1);
+        elsif (rising_edge(CLK)) then
+            multiPhaseCeCnt <= multiPhaseCeCnt + to_unsigned(1,1);
+        end if;
+    end process multi_phase_ce_process;
+    
+    multiPhaseCe <= '1' when (multiPhaseCeCnt = to_unsigned(0,1)) else '0';
+    
     pipeline_counter : process (CLK, RST)
     begin
         if (RST = '1') then
             prodCnt <= 0;
         elsif (rising_edge(CLK)) then
-            if (prodCnt = 23) then
-                prodCnt <= 0;
-            else
-                prodCnt <= prodCnt + 1;
+            if (multiPhaseCe = '1') then
+                if (prodCnt = 23) then
+                    prodCnt <= 0;
+                else
+                    prodCnt <= prodCnt + 1;
+                end if;
             end if;
         end if;
     end process pipeline_counter;
@@ -293,9 +309,7 @@ begin
     product_process : process (CLK, RST)
     begin
         if (rising_edge(CLK)) then
-            if (RST = '1') then
-                prodArray <= (others => (others => '0'));
-            else
+            if (multiPhaseCe = '1') then
                 prodArray(prodCnt) <= input_pipeline_phase1(prodCnt) * coeffArray(prodCnt);
             end if;
         end if;
@@ -425,18 +439,30 @@ begin
     
     output_typeconvert <= sum24(30 downto 15);
     
+    -- clocks data outputs to reduced timing errors from the above logic
+    process (CLK)
+    begin
+        if (rising_edge(CLK)) then
+            if (RST = '1') then
+                regoutTmp <= (others => '0');
+            else
+                regoutTmp <= output_typeconvert;
+            end if;
+        end if;
+    end process;
+    
     DataHoldRegister_process : process (CLK, RST)
     begin
         if (RST = '1') then
             regout <= (others => '0');
         elsif (rising_edge(CLK)) then
             if (phase_0 = '1') then
-                regout <= output_typeconvert;
+                regout <= regoutTmp;
             end if;
         end if; 
     end process DataHoldRegister_process;
     
-    muxout <= output_typeconvert when ( phase_0 = '1' ) else regout;
+    muxout <= regoutTmp when ( phase_0 = '1' ) else regout;
     
     -- Assignment Statements
     DOUT <= std_logic_vector(muxout);

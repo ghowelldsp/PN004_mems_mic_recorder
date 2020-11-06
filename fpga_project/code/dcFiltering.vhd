@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 09.08.2020 19:09:26
 -- Design Name: 
--- Module Name: cicFirDemod - Behavioral
+-- Module Name: dcFiltering - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,7 +35,7 @@ use IEEE.NUMERIC_STD.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity hpFlt is
+entity dcFiltering is
     port      ( RST                 : in    std_logic;                      -- system reset
                 CLK                 : in    std_logic;                      -- sys clock
                 CLK_CE              : in    std_logic;                      -- clock enable
@@ -48,15 +48,15 @@ entity hpFlt is
                 DOUT_1_2            : out   std_logic_vector (15 downto 0); -- data out
                 DOUT_2_2            : out   std_logic_vector (15 downto 0)  -- data out                    
                 );
-end hpFlt;
+end dcFiltering;
 
-architecture Behavioral of hpFlt is
+architecture Behavioral of dcFiltering is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------
 -----------------------------------------------------------------------------
 
-component biquad
+component biquadFlt
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_CE              : in    std_logic;                      -- clock enable
@@ -96,7 +96,7 @@ begin
     
     -------------------------------- DATA 1 FILTERS -----------------------------------
     
-    bq1_1 : biquad
+    bq1_1 : biquadFlt
         port map  ( RST                 => RST,
                     CLK                 => CLK,
                     CLK_CE              => CLK_CE,
@@ -111,7 +111,7 @@ begin
                     
     -------------------------------- DATA 2 FILTERS -----------------------------------
     
-    bq1_2 : biquad
+    bq1_2 : biquadFlt
         port map  ( RST                 => RST,
                     CLK                 => CLK,
                     CLK_CE              => CLK_CE,
@@ -126,7 +126,7 @@ begin
                     
     -------------------------------- DATA 3 FILTERS -----------------------------------
     
-    bq1_3 : biquad
+    bq1_3 : biquadFlt
         port map  ( RST                 => RST,
                     CLK                 => CLK,
                     CLK_CE              => CLK_CE,
@@ -141,7 +141,7 @@ begin
     
     -------------------------------- DATA 4 FILTERS -----------------------------------
     
-    bq1_4 : biquad
+    bq1_4 : biquadFlt
         port map  ( RST                 => RST,
                     CLK                 => CLK,
                     CLK_CE              => CLK_CE,

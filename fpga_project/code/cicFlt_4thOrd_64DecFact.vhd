@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 23.04.2020 19:09:26
 -- Design Name: 
--- Module Name: cicFilter - Behavioral
+-- Module Name: cicFlt_4thOrd_64DecFact - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,7 +35,7 @@ use IEEE.NUMERIC_STD.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity cicFilter is
+entity cicFlt_4thOrd_64DecFact is
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_PDM_CE          : in    std_logic;                      -- pdm clock
@@ -43,9 +43,9 @@ entity cicFilter is
             PCM_DOUT            : out   std_logic_vector (15 downto 0); -- pcm data out
             PDM_BIT_FLG         : in    std_logic                       -- signal that indicates the CIC filter to write data, then delay
             );
-end cicFilter;
+end cicFlt_4thOrd_64DecFact;
 
-architecture Behavioral of cicFilter is
+architecture Behavioral of cicFlt_4thOrd_64DecFact is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------

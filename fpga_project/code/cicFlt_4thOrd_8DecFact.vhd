@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 09.08.2020 19:09:26
 -- Design Name: 
--- Module Name: cicFlt - Behavioral
+-- Module Name: cicFlt_4thOrd_8DecFact - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -35,16 +35,16 @@ use IEEE.NUMERIC_STD.ALL;
 -------------------------- IO DECLERATIONS ----------------------------------
 -----------------------------------------------------------------------------
 
-entity cicFlt is
+entity cicFlt_4thOrd_8DecFact is
     port  ( RST                 : in    std_logic;                      -- system reset
             CLK                 : in    std_logic;                      -- sys clock
             CLK_CE              : in    std_logic;                      -- clock enable
             DIN                 : in    std_logic_vector (1 downto 0);  -- input data
             DOUT                : out   std_logic_vector (13 downto 0)  -- output data
             );
-end cicFlt;
+end cicFlt_4thOrd_8DecFact;
 
-architecture Behavioral of cicFlt is
+architecture Behavioral of cicFlt_4thOrd_8DecFact is
 
 -----------------------------------------------------------------------------
 ---------------------- COMPONENT DECLERATIONS -------------------------------
