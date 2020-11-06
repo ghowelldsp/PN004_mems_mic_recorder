@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Nov  3 00:10:38 2020
+| Date         : Fri Nov  6 19:48:26 2020
 | Host         : DESKTOP-H4I3KC3 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file memsMicRec_top_control_sets_placed.rpt
 | Design       : memsMicRec_top
@@ -59,231 +59,231 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              28 |           16 |
-| No           | No                    | Yes                    |             143 |           51 |
-| No           | Yes                   | No                     |             880 |          236 |
-| Yes          | No                    | No                     |            4581 |          889 |
-| Yes          | No                    | Yes                    |             976 |          267 |
-| Yes          | Yes                   | No                     |            4019 |         1112 |
+| No           | No                    | Yes                    |             143 |           50 |
+| No           | Yes                   | No                     |             880 |          240 |
+| Yes          | No                    | No                     |            4581 |          937 |
+| Yes          | No                    | Yes                    |             976 |          289 |
+| Yes          | Yes                   | No                     |            4019 |         1122 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------+-----------------------------------------------------------+-------------------------------------------------+------------------+----------------+
-|               Clock Signal               |                       Enable Signal                       |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
-+------------------------------------------+-----------------------------------------------------------+-------------------------------------------------+------------------+----------------+
-| ~CLK_IBUF_BUFG                           |                                                           |                                                 |                1 |              1 |
-| ~clocking_comp/mmcm_clocks/inst/CLK_OUT1 |                                                           |                                                 |                1 |              1 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/AR[0]                                       |                                                 |                1 |              1 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                             |                1 |              5 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                             |                2 |              5 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                             |                1 |              5 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                             |                1 |              5 |
-| ~clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dataTransmit_comp/fifoWrComp/wrEnCnt                      | dataTransmit_comp/fifoRstBuff_reg_n_0           |                2 |              5 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                             |                1 |              5 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                             |                1 |              5 |
-|  CLK_IBUF_BUFG                           | dataTransmit_comp/fifoRdComp/SPI_DIN[5]_i_2_n_0           | dataTransmit_comp/fifoRdComp/SPI_DIN[5]_i_1_n_0 |                2 |              6 |
-|  CLK_IBUF_BUFG                           |                                                           | spiSlave_comp/rstSys                            |                2 |              7 |
-|  CLK_IBUF_BUFG                           | spiSlave_comp/mosiData[7]_i_1_n_0                         | spiSlave_comp/rstSys                            |                1 |              8 |
-|  CLK_IBUF_BUFG                           |                                                           |                                                 |                4 |             10 |
-|  CLK_IBUF_BUFG                           | spiSlave_comp/p_3_in                                      | spiSlave_comp/rstSys                            |                2 |             11 |
-|  CLK_IBUF_BUFG                           | dataTransmit_comp/fifoRdComp/rdEnOffset                   | dataTransmit_comp/fifoRdComp/rdEnCnt[0]_i_1_n_0 |                4 |             13 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dataTransmit_comp/fifoWrComp/wrDinCnt[0]_i_1_n_0          | dataTransmit_comp/fifoRstBuff_reg_n_0           |                4 |             13 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 |                                                           |                                                 |               10 |             16 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/AR[0]                                       | clocking_comp/rstCntMMCM_reg[5]                 |                6 |             22 |
-|  CLK_IBUF_BUFG                           | spiSlave_comp/rstSys                                      |                                                 |                7 |             24 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/phase_0                    |                                                 |                4 |             28 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/phase_0                    |                                                 |                5 |             28 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___15_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___14_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___16_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___20_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___17_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___22_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___18_n_0                 |                                                 |                9 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___11_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___12_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___7_n_0                  |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___7_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___5_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___6_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___4_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___8_n_0                  |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___9_n_0                  |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i__n_0                     |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___17_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___4_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___6_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___5_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___9_n_0                  |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___8_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i__n_0                     |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___3_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___7_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___2_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___3_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___2_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___16_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___10_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___21_n_0                 |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___11_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___1_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___15_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___14_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___18_n_0                 |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___20_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___22_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___12_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___19_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___13_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/i___0_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___2_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___4_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___6_n_0                  |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___7_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___8_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___9_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___5_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___3_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i__n_0                     |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___11_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___12_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___14_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___15_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___21_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___19_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___10_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___22_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___17_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___16_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___20_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___13_n_0                 |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___0_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___1_n_0                  |                                                 |                9 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___18_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___9_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___7_n_0                  |                                                 |                9 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___4_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___3_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___5_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___8_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___6_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i__n_0                     |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/i___2_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___1_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___0_n_0                  |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___22_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___14_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___19_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___16_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___11_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___10_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___15_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___20_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___21_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___13_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___18_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___12_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___17_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___7_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___2_n_0                  |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___3_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___5_n_0                  |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___6_n_0                  |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___9_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i__n_0                     |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___4_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/i___8_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___0_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___11_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___0_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___10_n_0                 |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___12_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___13_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___17_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___18_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___19_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___16_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___14_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___22_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___20_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___1_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___21_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/i___15_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___1_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___21_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___13_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___12_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___20_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___19_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___15_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___11_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___17_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___14_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___18_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___16_n_0                 |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___0_n_0                  |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___10_n_0                 |                                                 |                4 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___22_n_0                 |                                                 |                6 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___8_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___9_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___4_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___2_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i__n_0                     |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___3_n_0                  |                                                 |                5 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___5_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/i___6_n_0                  |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___10_n_0                 |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___19_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___13_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___1_n_0                  |                                                 |                8 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/i___21_n_0                 |                                                 |                7 |             31 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/phase_0                    |                                                 |                4 |             32 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/phase_0                    |                                                 |                4 |             32 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/phase_0                    |                                                 |                5 |             32 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/phase_0                    |                                                 |                5 |             32 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/phase_0                    | clocking_comp/AR[0]                             |               10 |             41 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/phase_0                    | clocking_comp/AR[0]                             |               10 |             41 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/phase_0                    | clocking_comp/AR[0]                             |                9 |             43 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/phase_0                    | clocking_comp/AR[0]                             |               11 |             43 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/phase_0                    | clocking_comp/AR[0]                             |               12 |             43 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/phase_0                    | clocking_comp/AR[0]                             |                8 |             43 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_1/multiVec[3]_3                            | clocking_comp/AR[0]                             |               14 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_1/multiVec[4]_7                            | clocking_comp/AR[0]                             |               12 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_1/multiVec[2]_6                            | clocking_comp/AR[0]                             |               10 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_4/multiVec[2]_30                           | clocking_comp/AR[0]                             |               10 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_4/multiVec[4]_31                           | clocking_comp/AR[0]                             |               11 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_4/multiVec[3]_27                           | clocking_comp/AR[0]                             |                9 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_3/multiVec[2]_22                           | clocking_comp/AR[0]                             |                9 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_3/multiVec[4]_23                           | clocking_comp/AR[0]                             |               10 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_3/multiVec[3]_19                           | clocking_comp/AR[0]                             |                9 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_2/multiVec[2]_14                           | clocking_comp/AR[0]                             |                9 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_2/multiVec[3]_11                           | clocking_comp/AR[0]                             |               14 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_2/multiVec[4]_15                           | clocking_comp/AR[0]                             |               12 |             50 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/cicFlt11_comp/phase_0                    | clocking_comp/AR[0]                             |               18 |             56 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/cicFlt21_comp/phase_0                    | clocking_comp/AR[0]                             |               18 |             56 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_2/multiVec[0]_13                           | clocking_comp/AR[0]                             |               16 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_1/multiVec[1]_4                            | clocking_comp/AR[0]                             |               10 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_4/multiVec[0]_29                           | clocking_comp/AR[0]                             |               18 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_2/multiVec[1]_12                           | clocking_comp/AR[0]                             |               12 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_3/multiVec[1]_20                           | clocking_comp/AR[0]                             |               19 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_3/multiVec[0]_21                           | clocking_comp/AR[0]                             |               18 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_4/multiVec[1]_28                           | clocking_comp/AR[0]                             |               16 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | hpFlt_comp/bq1_1/multiVec[0]_5                            | clocking_comp/AR[0]                             |               15 |             64 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | pdmDemod_comp/cicFilter1_comp/section_out1                | clocking_comp/AR[0]                             |               28 |            104 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/phase64                                     | clocking_comp/AR[0]                             |               30 |            104 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/phase64_0                                   | clocking_comp/AR[0]                             |               32 |            104 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | pdmDemod_comp/cicFilter2_comp/section_out1                | clocking_comp/AR[0]                             |               28 |            104 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/E[0]                                        | clocking_comp/AR[0]                             |               43 |            145 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt11_comp/phase_1                    | clocking_comp/AR[0]                             |               96 |            336 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt21_comp/phase_1                    | clocking_comp/AR[0]                             |              100 |            336 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt22_comp/phase_1                    | clocking_comp/AR[0]                             |              113 |            384 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt12_comp/phase_1                    | clocking_comp/AR[0]                             |              115 |            384 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt13_comp/phase_1                    | clocking_comp/AR[0]                             |              123 |            384 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt23_comp/phase_1                    | clocking_comp/AR[0]                             |              107 |            384 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/clkPcmCE                                    | clocking_comp/AR[0]                             |              187 |            640 |
-|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 |                                                           | clocking_comp/AR[0]                             |              285 |           1016 |
-+------------------------------------------+-----------------------------------------------------------+-------------------------------------------------+------------------+----------------+
++------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|               Clock Signal               |                              Enable Signal                             |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+| ~CLK_IBUF_BUFG                           |                                                                        |                                                    |                1 |              1 |
+| ~clocking_comp/mmcm_clocks/inst/CLK_OUT1 |                                                                        |                                                    |                1 |              1 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/AR[0]                                                    |                                                    |                1 |              1 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                                |                1 |              5 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                                |                2 |              5 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                                |                2 |              5 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                                |                1 |              5 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                                |                2 |              5 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/multiPhaseCeCnt[0]_i_1_n_0 | clocking_comp/AR[0]                                |                1 |              5 |
+| ~clocking_comp/mmcm_clocks/inst/CLK_OUT1 | spiDataTransfer_comp/fifoWrComp/wrEnCnt                                | spiDataTransfer_comp/fifoRstBuff_reg_n_0           |                1 |              5 |
+|  CLK_IBUF_BUFG                           | spiDataTransfer_comp/fifoRdComp/SPI_DIN[5]_i_2_n_0                     | spiDataTransfer_comp/fifoRdComp/SPI_DIN[5]_i_1_n_0 |                2 |              6 |
+|  CLK_IBUF_BUFG                           |                                                                        | spiSlave_comp/rstSys                               |                3 |              7 |
+|  CLK_IBUF_BUFG                           | spiSlave_comp/mosiData[7]_i_1_n_0                                      | spiSlave_comp/rstSys                               |                3 |              8 |
+|  CLK_IBUF_BUFG                           |                                                                        |                                                    |                6 |             10 |
+|  CLK_IBUF_BUFG                           | spiSlave_comp/p_3_in                                                   | spiSlave_comp/rstSys                               |                5 |             11 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | spiDataTransfer_comp/fifoWrComp/wrDinCnt[0]_i_1_n_0                    | spiDataTransfer_comp/fifoRstBuff_reg_n_0           |                4 |             13 |
+|  CLK_IBUF_BUFG                           | spiDataTransfer_comp/fifoRdComp/rdEnOffset                             | spiDataTransfer_comp/fifoRdComp/rdEnCnt[0]_i_1_n_0 |                4 |             13 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 |                                                                        |                                                    |                8 |             16 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/AR[0]                                                    | clocking_comp/rstCntMMCM_reg[5]                    |                6 |             22 |
+|  CLK_IBUF_BUFG                           | spiSlave_comp/rstSys                                                   |                                                    |                7 |             24 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/phase_0                    |                                                    |                4 |             28 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/phase_0                    |                                                    |                4 |             28 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___15_n_0                 |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___11_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___18_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___0_n_0                  |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___13_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___17_n_0                 |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___1_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___10_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___14_n_0                 |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___19_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___20_n_0                 |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___12_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___6_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___7_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___8_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i__n_0                     |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___2_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___5_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___9_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___4_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___18_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___16_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___10_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___20_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___11_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___1_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___15_n_0                 |                                                    |                9 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___0_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___22_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___14_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___17_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___19_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___12_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___21_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___13_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___2_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___4_n_0                  |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___7_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___8_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___5_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___6_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i__n_0                     |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___3_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/i___9_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___21_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___20_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___11_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___13_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___18_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___0_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___15_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___19_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___16_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___22_n_0                 |                                                    |                9 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___17_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___1_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___10_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___14_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___12_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___7_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i__n_0                     |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___4_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___3_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___2_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___5_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___9_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___8_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/i___6_n_0                  |                                                    |                9 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___18_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___0_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___10_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___19_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___1_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___20_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___21_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___22_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___11_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___16_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___12_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___14_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___13_n_0                 |                                                    |                9 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___15_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___17_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___3_n_0                  |                                                    |               10 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___2_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___4_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___5_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___6_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___7_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___8_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___9_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i__n_0                     |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___17_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___0_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___22_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___16_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___13_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___19_n_0                 |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___18_n_0                 |                                                    |                4 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___21_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___20_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___1_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___11_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___10_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___14_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___12_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___15_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___4_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___5_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i__n_0                     |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___8_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___3_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___2_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___9_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___6_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/i___7_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___14_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___18_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___12_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___16_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___13_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___11_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___0_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___20_n_0                 |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___19_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___10_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___1_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___15_n_0                 |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___17_n_0                 |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___21_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___2_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___9_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___5_n_0                  |                                                    |                9 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___7_n_0                  |                                                    |                7 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___4_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___8_n_0                  |                                                    |                8 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___3_n_0                  |                                                    |                6 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___6_n_0                  |                                                    |                9 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i__n_0                     |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/i___3_n_0                  |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___16_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___22_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/i___21_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/i___22_n_0                 |                                                    |                5 |             31 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/phase_0                    |                                                    |                6 |             32 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/phase_0                    |                                                    |                4 |             32 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/phase_0                    |                                                    |                4 |             32 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/phase_0                    |                                                    |                6 |             32 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/phase_0                    | clocking_comp/AR[0]                                |               10 |             41 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/phase_0                    | clocking_comp/AR[0]                                |               12 |             41 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/phase_0                    | clocking_comp/AR[0]                                |               12 |             43 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/phase_0                    | clocking_comp/AR[0]                                |               11 |             43 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/phase_0                    | clocking_comp/AR[0]                                |               12 |             43 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/phase_0                    | clocking_comp/AR[0]                                |               12 |             43 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_3/multiVec[4]_23                                  | clocking_comp/AR[0]                                |                9 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_2/multiVec[4]_15                                  | clocking_comp/AR[0]                                |               10 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_3/multiVec[3]_19                                  | clocking_comp/AR[0]                                |                8 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_3/multiVec[2]_22                                  | clocking_comp/AR[0]                                |               10 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_1/multiVec[2]_6                                   | clocking_comp/AR[0]                                |               13 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_1/multiVec[3]_3                                   | clocking_comp/AR[0]                                |               10 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_1/multiVec[4]_7                                   | clocking_comp/AR[0]                                |               12 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_4/multiVec[3]_27                                  | clocking_comp/AR[0]                                |               14 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_4/multiVec[4]_31                                  | clocking_comp/AR[0]                                |               12 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_4/multiVec[2]_30                                  | clocking_comp/AR[0]                                |               10 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_2/multiVec[2]_14                                  | clocking_comp/AR[0]                                |                9 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_2/multiVec[3]_11                                  | clocking_comp/AR[0]                                |               13 |             50 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/cicFlt_4thOrd_8DecFact_1_comp/phase_0                 | clocking_comp/AR[0]                                |               18 |             56 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/cicFlt_4thOrd_8DecFact_2_comp/phase_0                 | clocking_comp/AR[0]                                |               19 |             56 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_1/multiVec[1]_4                                   | clocking_comp/AR[0]                                |               11 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_1/multiVec[0]_5                                   | clocking_comp/AR[0]                                |               16 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_4/multiVec[0]_29                                  | clocking_comp/AR[0]                                |               16 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_3/multiVec[0]_21                                  | clocking_comp/AR[0]                                |               15 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_4/multiVec[1]_28                                  | clocking_comp/AR[0]                                |               10 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_3/multiVec[1]_20                                  | clocking_comp/AR[0]                                |                9 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_2/multiVec[1]_12                                  | clocking_comp/AR[0]                                |               15 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | dcFiltering_comp/bq1_2/multiVec[0]_13                                  | clocking_comp/AR[0]                                |               15 |             64 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/phase64_0                                                | clocking_comp/AR[0]                                |               31 |            104 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/section_out1              | clocking_comp/AR[0]                                |               28 |            104 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/phase64                                                  | clocking_comp/AR[0]                                |               35 |            104 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicDemod_comp/cicFlt_4thOrd_64DecFact_2_comp/section_out1              | clocking_comp/AR[0]                                |               28 |            104 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/E[0]                                                     | clocking_comp/AR[0]                                |               44 |            145 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_11_comp/phase_1                    | clocking_comp/AR[0]                                |              110 |            336 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_21_comp/phase_1                    | clocking_comp/AR[0]                                |              109 |            336 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_12_comp/phase_1                    | clocking_comp/AR[0]                                |              115 |            384 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_13_comp/phase_1                    | clocking_comp/AR[0]                                |              117 |            384 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_23_comp/phase_1                    | clocking_comp/AR[0]                                |              118 |            384 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | cicFirDemod_comp/firFlt_halfBandDec_22_comp/phase_1                    | clocking_comp/AR[0]                                |              119 |            384 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 | clocking_comp/clkPcmCE                                                 | clocking_comp/AR[0]                                |              180 |            640 |
+|  clocking_comp/mmcm_clocks/inst/CLK_OUT1 |                                                                        | clocking_comp/AR[0]                                |              287 |           1016 |
++------------------------------------------+------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+
 
 

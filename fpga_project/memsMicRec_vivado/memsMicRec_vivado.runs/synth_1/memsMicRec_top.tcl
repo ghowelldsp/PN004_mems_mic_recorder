@@ -31,18 +31,18 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/memsMicRec_vivado/memsMicRec_vivado.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/biquad.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/cicFilter.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/biquadFlt.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/cicDemod.vhd
   Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/cicFirDemod.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/cicFlt.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/cicFlt_4thOrd_64DecFact.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/cicFlt_4thOrd_8DecFact.vhd
   Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/clocks.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/dataTransmit.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/dcFiltering.vhd
   Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/fifoRead.vhd
   Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/fifoWrite.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/firFlt.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/hpFlt.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/pdmDecode.vhd
-  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/pdmDemod.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/firFlt_halfBandDec.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/pdm2bitDecode.vhd
+  Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/spiDataTransfer.vhd
   Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/spiSlave.vhd
   Z:/Documents/DOCS/projects/projects_uploaded/PN004_mems_mic_recorder/fpga_project/code/memsMicRec_top.vhd
 }

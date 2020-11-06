@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Nov  3 00:07:27 2020
+| Date         : Fri Nov  6 19:45:08 2020
 | Host         : DESKTOP-H4I3KC3 running 64-bit major release  (build 9200)
 | Command      : report_drc -file memsMicRec_top_drc_opted.rpt -pb memsMicRec_top_drc_opted.pb -rpx memsMicRec_top_drc_opted.rpx
 | Design       : memsMicRec_top
@@ -37,602 +37,602 @@ Table of Contents
 -----------------
 DPIP-1#1 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#2 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#3 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#4 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#5 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#6 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#7 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#8 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#9 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#10 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#11 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#12 Warning
 Input pipelining  
-DSP cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0 input cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#13 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0 input hpFlt_comp/bq1_1/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0 input dcFiltering_comp/bq1_1/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#14 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0 input hpFlt_comp/bq1_1/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0 input dcFiltering_comp/bq1_1/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#15 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__0 input hpFlt_comp/bq1_1/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#16 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__0 input hpFlt_comp/bq1_1/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#17 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__1 input hpFlt_comp/bq1_1/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#18 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__1 input hpFlt_comp/bq1_1/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#19 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__2 input hpFlt_comp/bq1_1/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#20 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__2 input hpFlt_comp/bq1_1/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#21 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__3 input hpFlt_comp/bq1_1/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__3 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#22 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__4 input hpFlt_comp/bq1_1/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#23 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__4 input hpFlt_comp/bq1_1/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#24 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__5 input hpFlt_comp/bq1_1/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__5 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#25 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__6 input hpFlt_comp/bq1_1/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#26 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__6 input hpFlt_comp/bq1_1/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_1/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#27 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0 input hpFlt_comp/bq1_2/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0 input dcFiltering_comp/bq1_2/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#28 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0 input hpFlt_comp/bq1_2/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0 input dcFiltering_comp/bq1_2/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#29 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__0 input hpFlt_comp/bq1_2/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#30 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__0 input hpFlt_comp/bq1_2/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#31 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__1 input hpFlt_comp/bq1_2/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#32 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__1 input hpFlt_comp/bq1_2/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#33 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__2 input hpFlt_comp/bq1_2/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#34 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__2 input hpFlt_comp/bq1_2/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#35 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__3 input hpFlt_comp/bq1_2/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__3 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#36 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__4 input hpFlt_comp/bq1_2/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#37 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__4 input hpFlt_comp/bq1_2/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#38 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__5 input hpFlt_comp/bq1_2/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__5 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#39 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__6 input hpFlt_comp/bq1_2/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#40 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__6 input hpFlt_comp/bq1_2/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_2/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#41 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0 input hpFlt_comp/bq1_3/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0 input dcFiltering_comp/bq1_3/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#42 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0 input hpFlt_comp/bq1_3/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0 input dcFiltering_comp/bq1_3/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#43 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__0 input hpFlt_comp/bq1_3/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#44 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__0 input hpFlt_comp/bq1_3/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#45 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__1 input hpFlt_comp/bq1_3/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#46 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__1 input hpFlt_comp/bq1_3/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#47 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__2 input hpFlt_comp/bq1_3/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#48 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__2 input hpFlt_comp/bq1_3/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#49 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__3 input hpFlt_comp/bq1_3/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__3 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#50 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__4 input hpFlt_comp/bq1_3/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#51 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__4 input hpFlt_comp/bq1_3/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#52 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__5 input hpFlt_comp/bq1_3/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__5 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#53 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__6 input hpFlt_comp/bq1_3/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#54 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__6 input hpFlt_comp/bq1_3/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_3/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#55 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0 input hpFlt_comp/bq1_4/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0 input dcFiltering_comp/bq1_4/multiVec_reg[0]0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#56 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0 input hpFlt_comp/bq1_4/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0 input dcFiltering_comp/bq1_4/multiVec_reg[0]0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#57 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__0 input hpFlt_comp/bq1_4/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#58 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__0 input hpFlt_comp/bq1_4/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__0 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#59 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__1 input hpFlt_comp/bq1_4/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#60 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__1 input hpFlt_comp/bq1_4/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__1 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#61 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__2 input hpFlt_comp/bq1_4/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#62 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__2 input hpFlt_comp/bq1_4/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__2 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#63 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__3 input hpFlt_comp/bq1_4/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__3 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#64 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__4 input hpFlt_comp/bq1_4/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#65 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__4 input hpFlt_comp/bq1_4/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__4 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#66 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__5 input hpFlt_comp/bq1_4/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__5 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#67 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__6 input hpFlt_comp/bq1_4/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#68 Warning
 Input pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__6 input hpFlt_comp/bq1_4/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__6 input dcFiltering_comp/bq1_4/multiVec_reg[0]0__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPOP-1#1 Warning
 PREG Output pipelining  
-DSP cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#2 Warning
 PREG Output pipelining  
-DSP cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#3 Warning
 PREG Output pipelining  
-DSP cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#4 Warning
 PREG Output pipelining  
-DSP cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#5 Warning
 PREG Output pipelining  
-DSP cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#6 Warning
 PREG Output pipelining  
-DSP cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0 output cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#7 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0 output hpFlt_comp/bq1_1/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0 output dcFiltering_comp/bq1_1/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#8 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__0 output hpFlt_comp/bq1_1/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__0 output dcFiltering_comp/bq1_1/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#9 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__2 output hpFlt_comp/bq1_1/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__2 output dcFiltering_comp/bq1_1/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#10 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__3 output hpFlt_comp/bq1_1/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__3 output dcFiltering_comp/bq1_1/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#11 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__6 output hpFlt_comp/bq1_1/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__6 output dcFiltering_comp/bq1_1/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#12 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0 output hpFlt_comp/bq1_2/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0 output dcFiltering_comp/bq1_2/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#13 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__0 output hpFlt_comp/bq1_2/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__0 output dcFiltering_comp/bq1_2/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#14 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__2 output hpFlt_comp/bq1_2/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__2 output dcFiltering_comp/bq1_2/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#15 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__3 output hpFlt_comp/bq1_2/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__3 output dcFiltering_comp/bq1_2/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#16 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__6 output hpFlt_comp/bq1_2/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__6 output dcFiltering_comp/bq1_2/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#17 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0 output hpFlt_comp/bq1_3/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0 output dcFiltering_comp/bq1_3/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#18 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__0 output hpFlt_comp/bq1_3/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__0 output dcFiltering_comp/bq1_3/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#19 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__2 output hpFlt_comp/bq1_3/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__2 output dcFiltering_comp/bq1_3/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#20 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__3 output hpFlt_comp/bq1_3/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__3 output dcFiltering_comp/bq1_3/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#21 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__6 output hpFlt_comp/bq1_3/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__6 output dcFiltering_comp/bq1_3/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#22 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0 output hpFlt_comp/bq1_4/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0 output dcFiltering_comp/bq1_4/multiVec_reg[0]0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#23 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__0 output hpFlt_comp/bq1_4/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__0 output dcFiltering_comp/bq1_4/multiVec_reg[0]0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#24 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__2 output hpFlt_comp/bq1_4/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__2 output dcFiltering_comp/bq1_4/multiVec_reg[0]0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#25 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__3 output hpFlt_comp/bq1_4/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__3 output dcFiltering_comp/bq1_4/multiVec_reg[0]0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#26 Warning
 PREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__6 output hpFlt_comp/bq1_4/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__6 output dcFiltering_comp/bq1_4/multiVec_reg[0]0__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-2#1 Warning
 MREG Output pipelining  
-DSP cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt11_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt_halfBandDec_11_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#2 Warning
 MREG Output pipelining  
-DSP cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt12_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt_halfBandDec_12_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#3 Warning
 MREG Output pipelining  
-DSP cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt13_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt_halfBandDec_13_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#4 Warning
 MREG Output pipelining  
-DSP cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt21_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt_halfBandDec_21_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#5 Warning
 MREG Output pipelining  
-DSP cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt22_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt_halfBandDec_22_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#6 Warning
 MREG Output pipelining  
-DSP cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt23_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0 multiplier stage cicFirDemod_comp/firFlt_halfBandDec_23_comp/prodArray_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#7 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0 multiplier stage hpFlt_comp/bq1_1/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0 multiplier stage dcFiltering_comp/bq1_1/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#8 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__0 multiplier stage hpFlt_comp/bq1_1/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__0 multiplier stage dcFiltering_comp/bq1_1/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#9 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__2 multiplier stage hpFlt_comp/bq1_1/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__2 multiplier stage dcFiltering_comp/bq1_1/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#10 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__3 multiplier stage hpFlt_comp/bq1_1/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__3 multiplier stage dcFiltering_comp/bq1_1/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#11 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_1/multiVec_reg[0]0__6 multiplier stage hpFlt_comp/bq1_1/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_1/multiVec_reg[0]0__6 multiplier stage dcFiltering_comp/bq1_1/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#12 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0 multiplier stage hpFlt_comp/bq1_2/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0 multiplier stage dcFiltering_comp/bq1_2/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#13 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__0 multiplier stage hpFlt_comp/bq1_2/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__0 multiplier stage dcFiltering_comp/bq1_2/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#14 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__2 multiplier stage hpFlt_comp/bq1_2/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__2 multiplier stage dcFiltering_comp/bq1_2/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#15 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__3 multiplier stage hpFlt_comp/bq1_2/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__3 multiplier stage dcFiltering_comp/bq1_2/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#16 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_2/multiVec_reg[0]0__6 multiplier stage hpFlt_comp/bq1_2/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_2/multiVec_reg[0]0__6 multiplier stage dcFiltering_comp/bq1_2/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#17 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0 multiplier stage hpFlt_comp/bq1_3/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0 multiplier stage dcFiltering_comp/bq1_3/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#18 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__0 multiplier stage hpFlt_comp/bq1_3/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__0 multiplier stage dcFiltering_comp/bq1_3/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#19 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__2 multiplier stage hpFlt_comp/bq1_3/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__2 multiplier stage dcFiltering_comp/bq1_3/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#20 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__3 multiplier stage hpFlt_comp/bq1_3/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__3 multiplier stage dcFiltering_comp/bq1_3/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#21 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_3/multiVec_reg[0]0__6 multiplier stage hpFlt_comp/bq1_3/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_3/multiVec_reg[0]0__6 multiplier stage dcFiltering_comp/bq1_3/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#22 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0 multiplier stage hpFlt_comp/bq1_4/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0 multiplier stage dcFiltering_comp/bq1_4/multiVec_reg[0]0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#23 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__0 multiplier stage hpFlt_comp/bq1_4/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__0 multiplier stage dcFiltering_comp/bq1_4/multiVec_reg[0]0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#24 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__2 multiplier stage hpFlt_comp/bq1_4/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__2 multiplier stage dcFiltering_comp/bq1_4/multiVec_reg[0]0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#25 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__3 multiplier stage hpFlt_comp/bq1_4/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__3 multiplier stage dcFiltering_comp/bq1_4/multiVec_reg[0]0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 DPOP-2#26 Warning
 MREG Output pipelining  
-DSP hpFlt_comp/bq1_4/multiVec_reg[0]0__6 multiplier stage hpFlt_comp/bq1_4/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP dcFiltering_comp/bq1_4/multiVec_reg[0]0__6 multiplier stage dcFiltering_comp/bq1_4/multiVec_reg[0]0__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 

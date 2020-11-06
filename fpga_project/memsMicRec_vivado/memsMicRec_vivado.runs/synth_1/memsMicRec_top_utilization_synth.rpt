@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Nov  3 00:05:14 2020
+| Date         : Fri Nov  6 19:42:17 2020
 | Host         : DESKTOP-H4I3KC3 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file memsMicRec_top_utilization_synth.rpt -pb memsMicRec_top_utilization_synth.pb
 | Design       : memsMicRec_top

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Nov  3 00:14:21 2020
+| Date         : Fri Nov  6 19:52:46 2020
 | Host         : DESKTOP-H4I3KC3 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file memsMicRec_top_methodology_drc_routed.rpt -pb memsMicRec_top_methodology_drc_routed.pb -rpx memsMicRec_top_methodology_drc_routed.rpx
 | Design       : memsMicRec_top
@@ -49,7 +49,7 @@ Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell clocking_comp/ring_count[1]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pdmDecode_comp/pdmOffsetCnt_reg[0]/CLR, pdmDecode_comp/pdmOffsetCnt_reg[1]/CLR, pdmDecode_comp/pdmOffsetCnt_reg[2]/CLR, pdmDecode_comp/pdmOffsetCnt_reg[3]/CLR, pdmDecode_comp/pdmOffsetCnt_reg[4]/CLR, pdmDemod_comp/cicFilter1_comp/FSM_onehot_CIC_state_reg[1]/CLR, pdmDemod_comp/cicFilter1_comp/FSM_onehot_CIC_state_reg[2]/CLR, pdmDemod_comp/cicFilter1_comp/count64_reg[0]/CLR, pdmDemod_comp/cicFilter1_comp/count64_reg[1]/CLR, pdmDemod_comp/cicFilter1_comp/count64_reg[2]/CLR, pdmDemod_comp/cicFilter1_comp/count64_reg[3]/CLR, pdmDemod_comp/cicFilter1_comp/count64_reg[4]/CLR, pdmDemod_comp/cicFilter1_comp/count64_reg[5]/CLR, pdmDemod_comp/cicFilter1_comp/dataInSigned_reg[0]/CLR, pdmDemod_comp/cicFilter1_comp/dataInSigned_reg[1]/CLR (the first 15 of 1093 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell clocking_comp/ring_count[1]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pdm2bitDecode_comp/pdmOffsetCnt_reg[0]/CLR, pdm2bitDecode_comp/pdmOffsetCnt_reg[1]/CLR, pdm2bitDecode_comp/pdmOffsetCnt_reg[2]/CLR, pdm2bitDecode_comp/pdmOffsetCnt_reg[3]/CLR, pdm2bitDecode_comp/pdmOffsetCnt_reg[4]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/FSM_onehot_CIC_state_reg[1]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/FSM_onehot_CIC_state_reg[2]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/count64_reg[0]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/count64_reg[1]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/count64_reg[2]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/count64_reg[3]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/count64_reg[4]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/count64_reg[5]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/dataInSigned_reg[0]/CLR, cicDemod_comp/cicFlt_4thOrd_64DecFact_1_comp/dataInSigned_reg[1]/CLR (the first 15 of 1093 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
@@ -59,162 +59,162 @@ Related violations: <none>
 
 SYNTH-10#1 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#2 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#3 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#4 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#5 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#6 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#7 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#8 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_1/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_1/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#9 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#10 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#11 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#12 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#13 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#14 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#15 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#16 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_2/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_2/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#17 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#18 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#19 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#20 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#21 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#22 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#23 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#24 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_3/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_3/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#25 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0 of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#26 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__0 of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#27 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__1 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#28 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#29 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__3 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#30 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#31 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__5 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#32 Warning
 Wide multiplier  
-Detected multiplier at hpFlt_comp/bq1_4/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Detected multiplier at dcFiltering_comp/bq1_4/multiVec_reg[0]0__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
 Related violations: <none>
 
 TIMING-9#1 Warning

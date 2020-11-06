@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1604361637">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1604691419">
   <File Type="PA-TCL" Name="memsMicRec_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="memsMicRec_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="memsMicRec_top_reports.tcl"/>
@@ -11,13 +11,13 @@
   <File Type="VDS-TIMING-PB" Name="memsMicRec_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../code/biquad.vhd">
+    <File Path="$PPRDIR/../code/biquadFlt.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/cicFilter.vhd">
+    <File Path="$PPRDIR/../code/cicDemod.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -29,7 +29,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/cicFlt.vhd">
+    <File Path="$PPRDIR/../code/cicFlt_4thOrd_64DecFact.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../code/cicFlt_4thOrd_8DecFact.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -41,7 +47,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/dataTransmit.vhd">
+    <File Path="$PPRDIR/../code/dcFiltering.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -59,25 +65,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/firFlt.vhd">
+    <File Path="$PPRDIR/../code/firFlt_halfBandDec.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/hpFlt.vhd">
+    <File Path="$PPRDIR/../code/pdm2bitDecode.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/pdmDecode.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../code/pdmDemod.vhd">
+    <File Path="$PPRDIR/../code/spiDataTransfer.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -95,14 +95,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/i2sComp.vhd">
+    <File Path="$PPRDIR/../code/i2sSlave.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../code/i2sSlave.vhd">
+    <File Path="$PPRDIR/../code/i2sTransfer.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
