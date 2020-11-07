@@ -10,19 +10,21 @@
 #include <linux/spi/spidev.h>
 #include <time.h>
 #include <errno.h>
+#include "wav.h"
 
-#define	FN1 				"cic_m1.txt"
-#define	FN2 				"cic_m2.txt"
-#define	FN3 				"cicFir_m1.txt"
-#define	FN4 				"cicFir_m2.txt"
-#define	FN5 				"cicHp_m1.txt"
-#define	FN6 				"cicHp_m2.txt"
-#define	FN7 				"cicFirHp_m1.txt"
-#define	FN8 				"cicFirHp_m2.txt"
+#define	FN1 				"cic_m1.wav"
+#define	FN2 				"cic_m2.wav"
+#define	FN3 				"cicFir_m1.wav"
+#define	FN4 				"cicFir_m2.wav"
+#define	FN5 				"cicHp_m1.wav"
+#define	FN6 				"cicHp_m2.wav"
+#define	FN7 				"cicFirHp_m1.wav"
+#define	FN8 				"cicFirHp_m2.wav"
 
 #define FS 					48000
-#define FIFOSIZE 			4096
+#define BIT_DEPTH 			16
 #define	NUM_CHAN			8
+#define FIFOSIZE 			4096
 #define	BYTES_PER_CH 		2
 
 // global variables
@@ -39,62 +41,74 @@ void pabort(const char *s)
 	perror(s);
 }
 
+// open .wav file and write header info
+FILE* wavFileInit (char * filename, struct wav_info w)
+{
+	// open file and error check
+	FILE * fp = fopen(filename, "w");
+	if (fp == NULL){
+      	fprintf(stderr, "Could not open file %s", filename);
+		pabort("");
+    }
+
+    // write .wav info
+    write_wav_hdr(&w, fp);
+
+    return fp;
+}
+
+// sort data and write sample to .wav file
+int sortWriteSample (uint8_t *rxData, int ni, FILE *fp, struct wav_info w)
+{
+	int_fast32_t *rxWord = (int_fast32_t*) malloc(sizeof(int_fast32_t));
+
+	// sort word data
+	*rxWord = *(rxData + ni++);
+	*rxWord |= *(rxData + ni++) << 8;
+
+	// write sample data
+  	write_sample(&w, fp, rxWord);
+
+    return ni;
+}
+
 // learn the contols and write the data to file
-void saveData(uint8_t * rxData, int dataSize) {
+void saveData(uint8_t * rxData, int dataSize, int recTime) {
+
+	// define .wav structure
+	struct wav_info w;
+
+ 	w.num_channels = 1;
+  	w.bits_per_sample = BIT_DEPTH;
+  	w.sample_rate = FS;
+  	w.num_samples = FS * recTime;
+
+  	// print wav setup info
+    print_wav_info(&w);
 
 	// open file to write data to
-	FILE * fp1; fp1 = fopen(FN1, "w");
-	FILE * fp2; fp2 = fopen(FN2, "w");
-	FILE * fp3; fp3 = fopen(FN3, "w");
-	FILE * fp4; fp4 = fopen(FN4, "w");
-	FILE * fp5; fp5 = fopen(FN5, "w");
-	FILE * fp6; fp6 = fopen(FN6, "w");
-	FILE * fp7; fp7 = fopen(FN7, "w");
-	FILE * fp8; fp8 = fopen(FN8, "w");
+    FILE * fp1 = wavFileInit(FN1, w);
+    FILE * fp2 = wavFileInit(FN2, w);
+    FILE * fp3 = wavFileInit(FN3, w);
+    FILE * fp4 = wavFileInit(FN4, w);
+    FILE * fp5 = wavFileInit(FN5, w);
+    FILE * fp6 = wavFileInit(FN6, w);
+    FILE * fp7 = wavFileInit(FN7, w);
+    FILE * fp8 = wavFileInit(FN8, w);
 
-	uint16_t rxWord;
-
+ 	// write sample data   
 	for (int ni = 0; ni < dataSize; ni++) {
 
-		// 1st word
-		rxWord = *(rxData + ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp1, "%d\n",(int16_t)rxWord);
+		ni = sortWriteSample(rxData, ni, fp1, w);
+		ni = sortWriteSample(rxData, ni, fp2, w);
+		ni = sortWriteSample(rxData, ni, fp3, w);
+		ni = sortWriteSample(rxData, ni, fp4, w);
+		ni = sortWriteSample(rxData, ni, fp5, w);
+		ni = sortWriteSample(rxData, ni, fp6, w);
+		ni = sortWriteSample(rxData, ni, fp7, w);
+		ni = sortWriteSample(rxData, ni, fp8, w);
 
-		// 2nd word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp2, "%d\n",(int16_t)rxWord);
-
-		// 3rd word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp3, "%d\n",(int16_t)rxWord);
-
-		// 4th word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp4, "%d\n",(int16_t)rxWord);
-
-		// 5th word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp5, "%d\n",(int16_t)rxWord);
-
-		// 6th word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp6, "%d\n",(int16_t)rxWord);
-
-		// 7th word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp7, "%d\n",(int16_t)rxWord);
-
-		// 8th word
-		rxWord = *(rxData + ++ni);
-		rxWord |= *(rxData + ++ni) << 8;
-		fprintf(fp8, "%d\n",(int16_t)rxWord);
+		--ni;
 
 	}
 
@@ -302,7 +316,6 @@ int main(int argc, char *argv[])
 		poleFifo(fd);
 
 		// reads full fifo data
-		// msleep(1);
 		rxReadData = transfer(fd, FIFOSIZE, 0x00);
 
 		// concatenate data into large array
@@ -320,7 +333,6 @@ int main(int argc, char *argv[])
 		poleFifo(fd);
 
 		// reads last bytes
-		// msleep(1);
 		rxReadData = transfer(fd, divFra, 0x00);
 
 		// concatenate data into large array
@@ -337,7 +349,7 @@ int main(int argc, char *argv[])
 
 	// save data
 	printf("... saving data\n");
-	saveData(rxFull, totBytes);
+	saveData(rxFull, totBytes, recTime);
 
 	printf("... finished\n");
 
